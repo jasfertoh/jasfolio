@@ -11,6 +11,29 @@ body {
   font-family: Rubik;
 }
 
+.welcome, .logo {
+  text-align: left;
+  font-size: 26px;
+}
+
+.preloader {
+  padding-top: 20%;
+  padding-left: 35%;
+  padding-right: 35%;
+  background: #141c24;
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.loading {
+  overflow: hidden;
+  height: 100vh;
+}
+
 .text-color {
   color: #5a5a5a;
   font-size: 30px;
@@ -23,19 +46,112 @@ body {
 .nav_container ul {
   padding: 0;
   list-style-type: none;
-  overflow: hidden;
+}
+
+nav:after {
+  content:'';
+  clear:both;
+  display:table;
 }
 
 .nav_container li {
   text-decoration: none;
 }
+
 .navlogo {
+  font-size: 26px;
   float: left;
+}
+
+.navlogo a {
+  text-decoration: none;
 }
 
 .nav-items {
   float: right;
   padding-left: 30px;
+}
+
+.custom-select {
+  position: relative;
+  font-family: Rubik;
+  cursor: pointer;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #141c24;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.select-items div:first-child {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom: 2px solid grey;
+}
+
+.select-items div:nth-child(2) {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom: 2px solid grey;
+}
+
+.select-items div {
+  margin: 4px;
+  border-radius: 10px;
+}
+
+/*style items (options):*/
+.select-items {
+  border-radius: 10px;
+  position: absolute;
+  background-color: #EDF5E1;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.options {
+  text-decoration: none;
+  color: #141c24;
 }
 
 #email {
@@ -45,7 +161,7 @@ body {
 }
 
 #pfp {
-  border: 3px solid grey;
+  border: 1px solid white;
   border-radius: 250px;
   height: 150px;
   width: 150px;
@@ -301,5 +417,14 @@ a {
     margin-right: 0px;
     margin-left: 100px;
     margin-bottom: 42.5px;
+  }
+
+  .preloader {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .preloader .preintro{
+    margin-top: 200px;
   }
 }
