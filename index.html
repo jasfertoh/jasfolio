@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Jasfolio</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+</head>
+<body>
+    <div class="preloader"></div>
+    <div class="nav_container">
+        <nav>
+            <ul>
+                <li class="navlogo">Jasfolio</li>
+                <li class="nav-items">
+                    <div class="custom-select">
+                        <select id="lang">
+                            <option value="en">EN</option>
+                            <option value="chi">CHI</option>
+                        </select>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="profile">
+        <img id="pfp" src="images/selfie.jpg">
+        <h1 id="intro">Hi, I'm Jasfer! 👋</h1>
+        <h1 id="desc">Aspiring software engineer and student.</h2>
+        <div class="socials">
+            <a href="https://github.com/jasfertoh/" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/jasfertoh/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="info">
+            <p class="infotext">I am currenty studying in Year 2 of Higher Nitec in IT Applications Development.</p>
+            <p class="infotext">I enjoy building things from scratch and coming up with the solutions to solve the problems or bugs that I encounter in my work.</p>
+            <p class="infotext">I am also currently learning more about React on my own.</p>
+        </div>
+    </div>
+    <div class="achievements">
+        <h1>Achievements</h1>
+        <p class="infotext">Here are some of the achievements that I've obtained over the years.</p>
+        <div class="achievementsdisplay">
+            <div class="ashowcase">
+                <h3><span>Director's List Certificate</span> <a href="certificates/Director's List Certificate.pdf" target="_blank"><i class="far fa-arrow-alt-circle-down"></i></a></h3>
+                <p>Achieved a 4.0 GPA and obtained a Director's List Certificate in Year 1 of my course study.</p>
+            </div>
+        </div>
+    </div>
+    <div class="skills">
+        <h1>Skills</h1>
+        <p class="infotext">Here are some skills that I currently have.</p>
+        <div class="skillsdisplay">
+            <div class="card">
+                <a href="https://javascript.com" target="_blank">
+                    <img src="images/javascript.png">
+                    <h3 class="caption">JavaScript</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://html.com" target="_blank">
+                    <img src="images/html.png">
+                    <h3 class="caption">HTML</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">
+                    <img src="images/css.png">
+                    <h3 class="caption">CSS</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://python.org" target="_blank">
+                    <img src="images/python.png">
+                    <h3 class="caption">Python</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://php.net" target="_blank">
+                    <img src="images/php.png">
+                    <h3 class="caption">PHP</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://wordpress.org" target="_blank">
+                    <img src="images/wordpress.png">
+                    <h3 class="caption">WordPress</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="projects">
+        <h1>Projects</h1>
+        <p class="infotext">Here are some of the projects I have worked on.</p>
+        <div class="projectsdisplay">
+            <div class="project">
+                <div class="pcard" style="background-color: #2d2f33;
+                background-image: url('../images/discordjs.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 40%;">
+                    <div class="pinfocard">
+                        <h1>Discord Moderation Bot</h1>
+                        <p>Bot created with discord.js that displays time as <br>its nickname and refreshes automatically.</p>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/jasfertoh/DiscordBot" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="pinfo">
+                    <h1>Discord Moderation Bot</h1>
+                    <p>Bot created with discord.js that displays time as <br>its nickname and refreshes automatically.</p>
+                </div>
+            </div>
+            <div class="projectopp">
+                <div class="pcardopp">
+                    <div class="pinfocard">
+                        <h1>Covid-19 Statistics Tracker</h1>
+                        <p>Covid-19 Statistics Tracker created with JavaScript and the <br>use of an API that provides information on the cases in Singapore.</p>
+                    </div>
+                    <div id="github">
+                        <a href="https://github.com/jasfertoh/covidstatstracker" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div id="redirect">
+                        <a href="https://jasfertoh.com/covidstats/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="pinfo">
+                    <h1>Covid-19 Statistics Tracker</h1>
+                    <p>Covid-19 Statistics Tracker created with JavaScript and the <br>use of an API that provides information on the cases in Singapore.</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="pcard" style="background-color: #059be5;
+                background-image: url('../images/telegram.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: 40%;">
+                    <div class="pinfocard">
+                        <h1>Telegram Bot</h1>
+                        <p>Telegram bot coded in Python with functionalities <br>like checking the weather, current cryptocurrency prices and so on.</p>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/jasfertoh/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="pinfo">
+                    <h1>Telegram Bot</h1>
+                    <p>Telegram bot coded in Python with functionalities <br>like checking the weather, current cryptocurrency prices and so on.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="experience">
+        <h1>Experience</h1>
+        <p class="infotext">Here are some of my experiences I have accumulated over the years.</p>
+        <div class="experiencedisplay">
+            <h2>CCA</h2>
+            <p class="infotext">EXCO of the IAD Club</p>
+        </div>
+    </div>
+    <div class="testimonials">
+        <h1>Testimonials</h1>
+        <p class="infotext">Here are some things teachers have to say about me.</p>
+        <div class="testimonialdisplay">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/3644685e29.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="js/wow.js"></script>
+</body>
+</html>
