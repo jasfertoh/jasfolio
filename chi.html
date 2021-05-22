@@ -9,34 +9,32 @@
     <link rel="stylesheet" href="css/animate.css"/>
 </head>
 <body class="loading">
-    <!-- <div class="preloader">
+    <div class="preloader">
         <div class="preintro">
             <p class="welcome">Welcome to my Portfolio Page</p>
             <p class="logo">Jasfolio</p>
         </div>
-    </div> -->
+    </div>
     <div class="nav_container">
         <nav>
             <ul>
-                <li class="navlogo">Jasfolio</li>
+                <li class="navlogo"><a href="https://jasfertoh.com">Jasfolio</a></li>
                 <li class="nav-items">
-                    <form>
-                        <div class="custom-select" style="width: 75px;">
-                            <select id="lang" onChange="window.document.location.href=this.options[this.selectedIndex].value;">
-                                <option selected>CHI</option>
-                                <option value="https://jasfertoh.com/">EN</option>
-                                <option value="https://jasfertoh.com/chi.html">CHI</option>
-                            </select>
-                        </div>
-                    </form>
+                    <div class="custom-select" style="width: 75px;">
+                        <select id="lang" onChange="window.document.location.href=this.options[this.selectedIndex].value;" value="GO">
+                            <option selected>CHI</option>
+                            <option value="https://jasfertoh.com/">EN</option>
+                            <option value="https://jasfertoh.com/chi.html">CHI</option>
+                        </select>
+                    </div>
                 </li>
             </ul>
         </nav>
     </div>
     <div class="profile">
         <img id="pfp" src="images/selfie.jpg">
-        <h1 id="intro">Hi, I'm Jasfer! 👋</h1>
-        <h1 id="desc">Aspiring software engineer and student.</h2>
+        <h1 id="intro">你好，我的名是 Jasfer! 👋</h1>
+        <h1 id="desc">Aspiring software engineer and 学生。</h1>
         <div class="socials">
             <a href="https://github.com/jasfertoh/" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://linkedin.com/in/jasfertoh/" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -45,16 +43,6 @@
             <p class="infotext">I am currenty studying in Year 2 of Higher Nitec in IT Applications Development.</p>
             <p class="infotext">I enjoy building things from scratch and coming up with the solutions to solve the problems or bugs that I encounter in my work.</p>
             <p class="infotext">I am also currently learning more about React on my own.</p>
-        </div>
-    </div>
-    <div class="achievements">
-        <h1>Achievements</h1>
-        <p class="infotext">Here are some of the achievements that I've obtained over the years.</p>
-        <div class="achievementsdisplay">
-            <div class="ashowcase">
-                <h3><span>Director's List Certificate</span> <a href="certificates/Director's List Certificate.pdf" target="_blank"><i class="far fa-arrow-alt-circle-down"></i></a></h3>
-                <p>Achieved a 4.0 GPA and obtained a Director's List Certificate in Year 1 of my course study.</p>
-            </div>
         </div>
     </div>
     <div class="skills">
@@ -99,19 +87,53 @@
             </div>
         </div>
     </div>
+    <div class="achievements">
+        <h1>Achievements</h1>
+        <p class="infotext">Here are some of the achievements that I've obtained over the years.</p>
+        <div class="achievementsdisplay">
+            <div class="ashowcase">
+                <h3><span>International Competitions and Assessments for Schools (Mathematics) Merit</span> <a href="certificates/Director's List Certificate.pdf" target="_blank"><i class="far fa-arrow-alt-circle-down"></i></a></h3>
+                <p>Represented the school at International Competitions and Assessments for Schools (Mathematics) in 2017 and 2018 and obtained the Merit Award in 2017.</p>
+                <h3><span>Director's List Certificate</span> <a href="certificates/Director's List Certificate.pdf" target="_blank"><i class="far fa-arrow-alt-circle-down"></i></a></h3>
+                <p>Achieved a 4.0 GPA and obtained a Director's List Certificate in Year 1 of my course study.</p>
+                <h3><span>ACE Programme</span></h3>
+                <p>Enrolled into the ACE Programme, a student development programme that grooms outstanding students into all rounded achievers.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="experience">
+        <h1>Experience</h1>
+        <p class="infotext">Here are some of my experiences I have accumulated over the years.</p>
+        <div class="experiencedisplay">
+            <h3>CCA:</h3>
+            <p>Upper Sec CCA Executive Committee of the Archery Club</p>
+            <p>EXCO of the IAD Club</p>
+            <h3>Community Service:</h3>
+            <p>Assisted the elderly in SunLove Home in 2018</p>
+            <p>Participated in a VIA Carnival aimed at helping the All Saints Home in 2019</p>
+            <p>Participated actively in the Green Outreach Programme from 2016 to 2019</p>
+            <h3>Work:</h3>
+            <p>I worked as a retail associate in Challenger from Nov 2019 to Feb 2020 where I gained the IT product knowledge and attended to the customers’ needs.</p>
+            <h3>Others:</h3>
+            <p>I was selected to join the WorldSkills competition in May which start in Oct 2021.</p>
+        </div>
+    </div>
+    <div class="testimonials">
+        <h1>Testimonials</h1>
+        <p class="infotext">Here are some things teachers have to say about me.</p>
+        <div class="testimonialdisplay">
+        </div>
+    </div>
     <div class="projects">
         <h1>Projects</h1>
         <p class="infotext">Here are some of the projects I have worked on.</p>
         <div class="projectsdisplay">
             <div class="project">
-                <div class="pcard" style="background-color: #2d2f33;
-                background-image: url('../images/discordjs.png');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: 40%;">
+                <div class="pcard" id="discord">
                     <div class="pinfocard">
                         <h1>Discord Moderation Bot</h1>
-                        <p>Bot created with discord.js that displays time as <br>its nickname and refreshes automatically.</p>
+                        <p>Bot created with discord.js that displays time as its nickname and refreshes automatically.</p>
                     </div>
                     <div class="github">
                         <a href="https://github.com/jasfertoh/DiscordBot" target="_blank"><i class="fab fa-github"></i></a>
@@ -126,13 +148,13 @@
                 <div class="pcardopp">
                     <div class="pinfocard">
                         <h1>Covid-19 Statistics Tracker</h1>
-                        <p>Covid-19 Statistics Tracker created with JavaScript and the <br>use of an API that provides information on the cases in Singapore.</p>
+                        <p>Covid-19 Statistics Tracker created with JavaScript and the use of an API that provides information on the cases in Singapore.</p>
                     </div>
                     <div id="github">
                         <a href="https://github.com/jasfertoh/covidstatstracker" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                     <div id="redirect">
-                        <a href="https://jasfertoh.com/covidstats/"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://jasfertoh.com/covidstats/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="pinfo">
@@ -141,14 +163,10 @@
                 </div>
             </div>
             <div class="project">
-                <div class="pcard" style="background-color: #059be5;
-                background-image: url('../images/telegram.png');
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: 40%;">
+                <div class="pcard" id="tele">
                     <div class="pinfocard">
                         <h1>Telegram Bot</h1>
-                        <p>Telegram bot coded in Python with functionalities <br>like checking the weather, current cryptocurrency prices and so on.</p>
+                        <p>Telegram bot coded in Python with functionalities like checking the weather, current cryptocurrency prices and so on.</p>
                     </div>
                     <div class="github">
                         <a href="https://github.com/jasfertoh/" target="_blank"><i class="fab fa-github"></i></a>
@@ -162,26 +180,10 @@
             </div>
         </div>
     </div>
-    <div class="experience">
-        <h1>Experience</h1>
-        <p class="infotext">Here are some of my experiences I have accumulated over the years.</p>
-        <div class="experiencedisplay">
-            <h2>CCA</h2>
-            <p class="infotext">EXCO of the IAD Club</p>
-        </div>
-    </div>
-    <div class="testimonials">
-        <h1>Testimonials</h1>
-        <p class="infotext">Here are some things teachers have to say about me.</p>
-        <div class="testimonialdisplay">
-        </div>
-    </div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/app.js"></script>
     <script src="https://kit.fontawesome.com/3644685e29.js" crossorigin="anonymous"></script>
     <script src="js/script.js"></script>

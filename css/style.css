@@ -17,6 +17,7 @@ body {
 }
 
 .preloader {
+  z-index: 9999999;
   padding-top: 20%;
   padding-left: 35%;
   padding-right: 35%;
@@ -245,10 +246,6 @@ a {
   text-decoration: none;
 }
 
-.card:hover {
-  top: -10px;
-}
-
 .caption {
   text-align: center;
   font-weight: 500;
@@ -292,6 +289,7 @@ a {
   bottom: 0;
   left: 0;
   font-size: 35px;
+  z-index: 999;
 }
 
 .pcardopp #github {
@@ -312,14 +310,13 @@ a {
   font-size: 30px;
 }
 
-.pcard:hover,
-.pcardopp:hover {
-  top: -10px;
-}
-
 .project,
 .projectopp {
   position: relative;
+}
+
+.pcard {
+  margin-bottom: 20px;
 }
 
 .project .pinfo {
@@ -350,6 +347,33 @@ a {
   text-decoration: underline;
 }
 
+#discord {
+  background-color: #2d2f33;
+  background-image: url('../images/discordjs.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+#tele {
+  background-color: #059be5;
+  background-image: url('../images/telegram.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+@media (hover: hover) {
+  .card:hover {
+    top: -10px;
+  }
+
+  .pcard:hover,
+  .pcardopp:hover {
+  top: -10px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   
   body {
@@ -372,8 +396,37 @@ a {
     left: 0px;
     width: 100%;
     margin-top: 20px;
-    background-size: 45%;
   }
+
+  .pcard::after {
+    width: 100%;
+    border-radius: 15px;
+    height: 400px;
+    background: black;
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0.5;
+  }
+
+  .pinfocard {
+      position:relative;
+      z-index:1;
+  }
+
+  .pcardopp::after {
+    width: 100%;
+    border-radius: 15px;
+    height: 400px;
+    background: black;
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:0.5;
+  }
+
 
   .projectsdisplay {
     margin-top: 50px;
@@ -407,6 +460,7 @@ a {
     left: 0;
     margin-right: 0px;
     margin-left: 40px;
+    z-index: 999;
   }
 
   .pcardopp #redirect {
@@ -417,6 +471,7 @@ a {
     margin-right: 0px;
     margin-left: 100px;
     margin-bottom: 42.5px;
+    z-index: 999;
   }
 
   .preloader {
