@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Jasfolio</title>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="loading">
     <div class="preloader">
         <div class="preintro">
-            <p class="welcome">Welcome to my Portfolio Page</p>
+            <p class="welcome">Welcome to my Portfolio</p>
             <p class="logo">Jasfolio</p>
         </div>
     </div>
@@ -21,7 +21,7 @@
                 <li class="navlogo"><a href="https://jasfertoh.com">Jasfolio</a></li>
                 <li class="nav-items">
                     <div class="custom-select" style="width: 75px;">
-                        <select id="lang" onChange="window.document.location.href=this.options[this.selectedIndex].value;" value="GO">
+                        <select id="lang">
                             <option selected>EN</option>
                             <option value="https://jasfertoh.com/">EN</option>
                             <option value="https://jasfertoh.com/chi.html">CHI</option>
@@ -41,91 +41,13 @@
         </div>
         <div class="info">
             <p class="infotext">I am currenty studying in Year 2 of Higher Nitec in IT Applications Development.</p>
-            <p class="infotext">I enjoy building things from scratch and coming up with the solutions to solve the problems or bugs that I encounter in my work.</p>
+            <p class="infotext">I enjoy building things from scratch and coming up with solutions to the problems or bugs that I encounter in my work.</p>
             <p class="infotext">I am also currently learning more about React on my own.</p>
         </div>
     </div>
-    <div class="skills">
-        <h1>Skills</h1>
-        <p class="infotext">Here are some skills that I currently have.</p>
-        <div class="skillsdisplay">
-            <div class="card">
-                <a href="https://javascript.com" target="_blank">
-                    <img src="images/javascript.png">
-                    <h3 class="caption">JavaScript</h3>
-                </a>
-            </div>
-            <div class="card">
-                <a href="https://html.com" target="_blank">
-                    <img src="images/html.png">
-                    <h3 class="caption">HTML</h3>
-                </a>
-            </div>
-            <div class="card">
-                <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">
-                    <img src="images/css.png">
-                    <h3 class="caption">CSS</h3>
-                </a>
-            </div>
-            <div class="card">
-                <a href="https://python.org" target="_blank">
-                    <img src="images/python.png">
-                    <h3 class="caption">Python</h3>
-                </a>
-            </div>
-            <div class="card">
-                <a href="https://php.net" target="_blank">
-                    <img src="images/php.png">
-                    <h3 class="caption">PHP</h3>
-                </a>
-            </div>
-            <div class="card">
-                <a href="https://wordpress.org" target="_blank">
-                    <img src="images/wordpress.png">
-                    <h3 class="caption">WordPress</h3>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="achievements">
-        <h1>Achievements</h1>
-        <p class="infotext">Here are some of the achievements that I've obtained over the years.</p>
-        <div class="achievementsdisplay">
-            <div class="ashowcase">
-                <h3><span>International Competitions and Assessments for Schools (Mathematics) Merit</span> <a href="certificates/Director's List Certificate.pdf" target="_blank"><i class="far fa-arrow-alt-circle-down"></i></a></h3>
-                <p>Represented the school at International Competitions and Assessments for Schools (Mathematics) in 2017 and 2018 and obtained the Merit Award in 2017.</p>
-                <h3><span>Director's List Certificate</span> <a href="certificates/Director's List Certificate.pdf" target="_blank"><i class="far fa-arrow-alt-circle-down"></i></a></h3>
-                <p>Achieved a 4.0 GPA and obtained a Director's List Certificate in Year 1 of my course study.</p>
-                <h3><span>ACE Programme</span></h3>
-                <p>Enrolled into the ACE Programme, a student development programme that grooms outstanding students into all rounded achievers.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="experience">
-        <h1>Experience</h1>
-        <p class="infotext">Here are some of my experiences I have accumulated over the years.</p>
-        <div class="experiencedisplay">
-            <h3>CCA:</h3>
-            <p>Upper Sec CCA Executive Committee of the Archery Club</p>
-            <p>EXCO of the IAD Club</p>
-            <h3>Community Service:</h3>
-            <p>Assisted the elderly in SunLove Home in 2018</p>
-            <p>Participated in a VIA Carnival aimed at helping the All Saints Home in 2019</p>
-            <p>Participated actively in the Green Outreach Programme from 2016 to 2019</p>
-            <h3>Work:</h3>
-            <p>I worked as a retail associate in Challenger from Nov 2019 to Feb 2020 where I gained the IT product knowledge and attended to the customers’ needs.</p>
-            <h3>Others:</h3>
-            <p>I was selected to join the WorldSkills competition in May which start in Oct 2021.</p>
-        </div>
-    </div>
-    <div class="testimonials">
-        <h1>Testimonials</h1>
-        <p class="infotext">Here are some things teachers have to say about me.</p>
-        <div class="testimonialdisplay">
-        </div>
-    </div>
-    <div class="projects">
+    <div class="projects" data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
         <h1>Projects</h1>
         <p class="infotext">Here are some of the projects I have worked on.</p>
         <div class="projectsdisplay">
@@ -180,8 +102,114 @@
             </div>
         </div>
     </div>
+    <div class="skills" data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
+        <h1>Skills</h1>
+        <p class="infotext">Here are some skills that I currently have.</p>
+        <div class="skillsdisplay" data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine">
+            <div class="card">
+                <a href="https://javascript.com" target="_blank">
+                    <img src="images/javascript.png">
+                    <h3 class="caption">JavaScript</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://html.com" target="_blank">
+                    <img src="images/html.png">
+                    <h3 class="caption">HTML</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">
+                    <img src="images/css.png">
+                    <h3 class="caption">CSS</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://python.org" target="_blank">
+                    <img src="images/python.png">
+                    <h3 class="caption">Python</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://php.net" target="_blank">
+                    <img src="images/php.png">
+                    <h3 class="caption">PHP</h3>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://wordpress.org" target="_blank">
+                    <img src="images/wordpress.png">
+                    <h3 class="caption">WordPress</h3>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="achievements" data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
+        <h1>Achievements</h1>
+        <p class="infotext">Here are some of the achievements that I've obtained over the years.</p>
+        <div class="achievementsdisplay">
+            <div class="ashowcase">
+                <h3><span>International Competitions and Assessments for Schools (Mathematics) Merit</span> <a href="certificates/ICAS.pdf" target="_blank"><i class="fas fa-external-link-alt"></i></i></a></h3>
+                <p>Represented the school at International Competitions and Assessments for Schools (Mathematics) in 2017 and 2018 and obtained the Merit Award in 2017.</p>
+                <h3><span>Director's List Certificate</span> <a href="certificates/Director's List Certificate.pdf" target="_blank"><i class="fas fa-external-link-alt"></i></a></h3>
+                <p>Achieved a 4.0 GPA and obtained a Director's List Certificate in Year 1 of my course study.</p>
+                <h3><span>ACE Programme</span></h3>
+                <p>Enrolled into the ACE Programme, a student development programme that grooms outstanding students into all rounded achievers.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="experience" data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
+        <h1>Experience</h1>
+        <p class="infotext">Here are some of my experiences I have accumulated over the years.</p>
+        <div class="experiencedisplay">
+            <div class="exp">
+                <div class="line"></div>
+                <h3>CCA:</h3>
+                <p>Upper Sec CCA Executive Committee of the Archery Club</p>
+                <p>EXCO of the IAD Club</p>
+            </div>
+            <div class="exp">
+                <div class="line"></div>
+                <h3>Community Service:</h3>
+                <p>Assisted the elderly in SunLove Home in 2018</p>
+                <p>Participated in a VIA Carnival aimed at helping the All Saints Home in 2019</p>
+                <p>Participated actively in the Green Outreach Programme from 2016 to 2019</p>
+            </div>
+            <div class="exp">
+                <div class="line"></div>
+                <h3>Work:</h3>
+                <p>Worked as a retail associate in Challenger from Nov 2019 to Feb 2020 where I gained the IT product knowledge and attended to the customers’ needs.</p>
+            </div>
+            <div class="exp">
+                <div class="line"></div>
+                <h3>Others:</h3>
+                <p>I was selected to join the WorldSkills competition in May which start in Oct 2021.</p>
+            </div>
+        </div>
+    </div>
+    <div class="testimonials" data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
+        <h1>Testimonials</h1>
+        <p class="infotext">Here are some things teachers have to say about me.</p>
+        <div class="testimonialdisplay">
+        </div>
+    </div>
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/app.js"></script>
