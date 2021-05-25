@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Jasfolio</title>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="loading">
     <div class="preloader">
         <div class="preintro">
-            <p class="welcome">Welcome to my Portfolio Page</p>
+            <p class="welcome">欢迎来到我的作品集</p>
             <p class="logo">Jasfolio</p>
         </div>
     </div>
@@ -21,7 +21,7 @@
                 <li class="navlogo"><a href="https://jasfertoh.com">Jasfolio</a></li>
                 <li class="nav-items">
                     <div class="custom-select" style="width: 75px;">
-                        <select id="lang" onChange="window.document.location.href=this.options[this.selectedIndex].value;" value="GO">
+                        <select id="lang">
                             <option selected>CHI</option>
                             <option value="https://jasfertoh.com/">EN</option>
                             <option value="https://jasfertoh.com/chi.html">CHI</option>
@@ -33,22 +33,83 @@
     </div>
     <div class="profile">
         <img id="pfp" src="images/selfie.jpg">
-        <h1 id="intro">你好，我的名是 Jasfer! 👋</h1>
-        <h1 id="desc">Aspiring software engineer and 学生。</h1>
+        <h1 id="intro">嗨，我是 Jasfer! 👋</h1>
+        <h1 id="desc">渴望成为软件工程师的学生.</h1>
         <div class="socials">
             <a href="https://github.com/jasfertoh/" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://linkedin.com/in/jasfertoh/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
         <div class="info">
-            <p class="infotext">I am currenty studying in Year 2 of Higher Nitec in IT Applications Development.</p>
-            <p class="infotext">I enjoy building things from scratch and coming up with the solutions to solve the problems or bugs that I encounter in my work.</p>
-            <p class="infotext">I am also currently learning more about React on my own.</p>
+            <p class="infotext">我是个信息应用程序开发高级技工资格证书2年级生.</p>
+            <p class="infotext">我喜欢从零开始创造东西和寻找课业上遇到的难题的解决方法.</p>
+            <p class="infotext">我现在在闲暇时间自己学习React.</p>
         </div>
     </div>
-    <div class="skills">
-        <h1>Skills</h1>
-        <p class="infotext">Here are some skills that I currently have.</p>
-        <div class="skillsdisplay">
+    <div class="projects" data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
+        <h1>作品</h1>
+        <p class="infotext">这是我的一些作品.</p>
+        <div class="projectsdisplay">
+            <div class="project">
+                <div class="pcard" id="discord">
+                    <div class="pinfocard">
+                        <h1>Discord 审计机器人</h1>
+                        <p>使用Discord.js编程能够将时间显示为其昵称并自动刷新的机器人.</p>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/jasfertoh/DiscordBot" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="pinfo">
+                    <h1>Discord 审计机器人</h1>
+                    <p>使用Discord.js编程能够将时间显示为其昵称并自动刷新.</p>
+                </div>
+            </div>
+            <div class="projectopp">
+                <div class="pcardopp">
+                    <div class="pinfocard">
+                        <h1>Covid-19 数据追踪器</h1>
+                        <p>通过API得到的新加坡的Covid-19确诊人数，使用JavaScript编程的新冠状病毒的数据追踪器.</p>
+                    </div>
+                    <div id="github">
+                        <a href="https://github.com/jasfertoh/covidstatstracker" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div id="redirect">
+                        <a href="https://jasfertoh.com/covidstats/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="pinfo">
+                    <h1>Covid-19 数据追踪器</h1>
+                    <p>通过API得到的新加坡的Covid-19确诊人数，<br>使用JavaScript编程的新冠状病毒的数据追踪器.</p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="pcard" id="tele">
+                    <div class="pinfocard">
+                        <h1>Telegram 机器人</h1>
+                        <p>通过Python编程能够查天气，当前的加密货币价格，等等的机器人.</p>
+                    </div>
+                    <div class="github">
+                        <a href="https://github.com/jasfertoh/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="pinfo">
+                    <h1>Telegram 机器人</h1>
+                    <p>通过Python编程能够查天气，当前的加密货币价格，等等的机器人.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills" data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
+        <h1>技能</h1>
+        <p class="infotext">这是我目前拥有的技能.</p>
+        <div class="skillsdisplay" data-aos="fade-up"
+        data-aos-offset="100"
+        data-aos-easing="ease-in-sine">
             <div class="card">
                 <a href="https://javascript.com" target="_blank">
                     <img src="images/javascript.png">
@@ -87,101 +148,69 @@
             </div>
         </div>
     </div>
-    <div class="achievements">
-        <h1>Achievements</h1>
-        <p class="infotext">Here are some of the achievements that I've obtained over the years.</p>
+    <div class="achievements" data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
+        <h1>成就</h1>
+        <p class="infotext">这是我这几年得到的成就.</p>
         <div class="achievementsdisplay">
             <div class="ashowcase">
-                <h3><span>International Competitions and Assessments for Schools (Mathematics) Merit</span> <a href="certificates/Director's List Certificate.pdf" target="_blank"><i class="far fa-arrow-alt-circle-down"></i></a></h3>
-                <p>Represented the school at International Competitions and Assessments for Schools (Mathematics) in 2017 and 2018 and obtained the Merit Award in 2017.</p>
-                <h3><span>Director's List Certificate</span> <a href="certificates/Director's List Certificate.pdf" target="_blank"><i class="far fa-arrow-alt-circle-down"></i></a></h3>
-                <p>Achieved a 4.0 GPA and obtained a Director's List Certificate in Year 1 of my course study.</p>
-                <h3><span>ACE Programme</span></h3>
-                <p>Enrolled into the ACE Programme, a student development programme that grooms outstanding students into all rounded achievers.
+                <h3><span>International Competitions and Assessments for Schools (数学) 优异奖</span> <a href="certificates/ICAS.pdf" target="_blank"><i class="fas fa-external-link-alt"></i></i></a></h3>
+                <p>在2017和2018年代表学校参加了International Competitions and
+                    Assessments for Schools(数学)和在2017年里得到了优异奖</p>
+                <h3><span>Director's List Certificate</span> <a href="certificates/Director's List Certificate.pdf" target="_blank"><i class="fas fa-external-link-alt"></i></a></h3>
+                <p>在第一学年得到 4.0GPA 和 Director's List 证书.</p>
+                <h3><span>ACE 计划</span></h3>
+                <p>进入了ACE计划, 一个学生发展计划，将杰出的学生培养成全面的成就者.
                 </p>
             </div>
         </div>
     </div>
-    <div class="experience">
-        <h1>Experience</h1>
-        <p class="infotext">Here are some of my experiences I have accumulated over the years.</p>
+    <div class="experience" data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
+        <h1>经验</h1>
+        <p class="infotext">这些是我这些年累计的经验.</p>
         <div class="experiencedisplay">
-            <h3>CCA:</h3>
-            <p>Upper Sec CCA Executive Committee of the Archery Club</p>
-            <p>EXCO of the IAD Club</p>
-            <h3>Community Service:</h3>
-            <p>Assisted the elderly in SunLove Home in 2018</p>
-            <p>Participated in a VIA Carnival aimed at helping the All Saints Home in 2019</p>
-            <p>Participated actively in the Green Outreach Programme from 2016 to 2019</p>
-            <h3>Work:</h3>
-            <p>I worked as a retail associate in Challenger from Nov 2019 to Feb 2020 where I gained the IT product knowledge and attended to the customers’ needs.</p>
-            <h3>Others:</h3>
-            <p>I was selected to join the WorldSkills competition in May which start in Oct 2021.</p>
+            <div class="exp">
+                <div class="line"></div>
+                <h3>课外活动：</h3>
+                <p>射箭俱乐部高中课外活动执行委员会.</p>
+                <p>信息技术应用开发俱乐部的行政会议成员.</p>
+            </div>
+            <div class="exp">
+                <div class="line"></div>
+                <h3>社区服务：</h3>
+                <p>在2018年里协助了SunLove Home的长辈们.</p>
+                <p>在2019年里参加了一个目的是来协助All Saints Home的狂欢节.</p>
+                <p>积极地从2016到2019年参与促进环保的计划.</p>
+            </div>
+            <div class="exp">
+                <div class="line"></div>
+                <h3>工作:</h3>
+                <p>从十一月2019年到2月2020年在Challenger当了零售助理， 学到了各个不同的技术产品知识，也学到了如何满足客户需求.</p>
+            </div>
+            <div class="exp">
+                <div class="line"></div>
+                <h3>其他:</h3>
+                <p>在五月2020年被挑选代表学校参加十月开始的WorldSkills（应用程序开发）比赛.</p>
+            </div>
         </div>
     </div>
-    <div class="testimonials">
-        <h1>Testimonials</h1>
-        <p class="infotext">Here are some things teachers have to say about me.</p>
+    <div class="testimonials" data-aos="fade-up"
+    data-aos-offset="100"
+    data-aos-easing="ease-in-sine">
+        <h1>感言</h1>
+        <p class="infotext">这是别人对我的评价.</p>
         <div class="testimonialdisplay">
-        </div>
-    </div>
-    <div class="projects">
-        <h1>Projects</h1>
-        <p class="infotext">Here are some of the projects I have worked on.</p>
-        <div class="projectsdisplay">
-            <div class="project">
-                <div class="pcard" id="discord">
-                    <div class="pinfocard">
-                        <h1>Discord Moderation Bot</h1>
-                        <p>Bot created with discord.js that displays time as its nickname and refreshes automatically.</p>
-                    </div>
-                    <div class="github">
-                        <a href="https://github.com/jasfertoh/DiscordBot" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <div class="pinfo">
-                    <h1>Discord Moderation Bot</h1>
-                    <p>Bot created with discord.js that displays time as <br>its nickname and refreshes automatically.</p>
-                </div>
-            </div>
-            <div class="projectopp">
-                <div class="pcardopp">
-                    <div class="pinfocard">
-                        <h1>Covid-19 Statistics Tracker</h1>
-                        <p>Covid-19 Statistics Tracker created with JavaScript and the use of an API that provides information on the cases in Singapore.</p>
-                    </div>
-                    <div id="github">
-                        <a href="https://github.com/jasfertoh/covidstatstracker" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div id="redirect">
-                        <a href="https://jasfertoh.com/covidstats/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="pinfo">
-                    <h1>Covid-19 Statistics Tracker</h1>
-                    <p>Covid-19 Statistics Tracker created with JavaScript and the <br>use of an API that provides information on the cases in Singapore.</p>
-                </div>
-            </div>
-            <div class="project">
-                <div class="pcard" id="tele">
-                    <div class="pinfocard">
-                        <h1>Telegram Bot</h1>
-                        <p>Telegram bot coded in Python with functionalities like checking the weather, current cryptocurrency prices and so on.</p>
-                    </div>
-                    <div class="github">
-                        <a href="https://github.com/jasfertoh/" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                    
-                </div>
-                <div class="pinfo">
-                    <h1>Telegram Bot</h1>
-                    <p>Telegram bot coded in Python with functionalities <br>like checking the weather, current cryptocurrency prices and so on.</p>
-                </div>
-            </div>
         </div>
     </div>
 
     <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/app.js"></script>

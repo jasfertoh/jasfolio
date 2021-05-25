@@ -11,7 +11,8 @@ body {
   font-family: Rubik;
 }
 
-.welcome, .logo {
+.welcome,
+.logo {
   text-align: left;
   font-size: 26px;
 }
@@ -50,9 +51,9 @@ body {
 }
 
 nav:after {
-  content:'';
-  clear:both;
-  display:table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .nav_container li {
@@ -106,7 +107,8 @@ nav:after {
 }
 
 /*style the items (options), including the selected item:*/
-.select-items div,.select-selected {
+.select-items div,
+.select-selected {
   color: #ffffff;
   padding: 8px 16px;
   border: 1px solid transparent;
@@ -134,7 +136,7 @@ nav:after {
 .select-items {
   border-radius: 10px;
   position: absolute;
-  background-color: #EDF5E1;
+  background-color: #edf5e1;
   top: 100%;
   left: 0;
   right: 0;
@@ -146,7 +148,8 @@ nav:after {
   display: none;
 }
 
-.select-items div:hover, .same-as-selected {
+.select-items div:hover,
+.same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -284,11 +287,11 @@ a {
   height: 400px;
   position: relative;
   background-color: #379784;
-  background-image: url('../images/covidstats.png');
+  background-image: url("../images/covidstats.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  right: -400px;
+  right: -310px;
   border-radius: 15px;
   transition: top ease 0.5s;
   top: 0;
@@ -319,7 +322,7 @@ a {
   margin-bottom: 40px;
   position: absolute;
   bottom: 0;
-  right: 60px;;
+  right: 60px;
   font-size: 30px;
 }
 
@@ -336,7 +339,7 @@ a {
   margin-top: 20px;
   position: absolute;
   top: 0;
-  right: -100px;
+  right: -200px;
   text-align: right;
   visibility: visible;
 }
@@ -362,7 +365,7 @@ a {
 
 #discord {
   background-color: #2d2f33;
-  background-image: url('../images/discordjs.png');
+  background-image: url("../images/discordjs.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -370,7 +373,7 @@ a {
 
 #tele {
   background-color: #059be5;
-  background-image: url('../images/telegram.png');
+  background-image: url("../images/telegram.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 40%;
@@ -391,12 +394,11 @@ a {
 
   .pcard:hover,
   .pcardopp:hover {
-  top: -10px;
+    top: -10px;
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  
   body {
     margin-right: 5%;
     margin-left: 5%;
@@ -431,16 +433,16 @@ a {
     border-radius: 15px;
     height: 400px;
     background: black;
-    content:'';
-    position:absolute;
-    top:0;
-    left:0;
-    opacity:0.5;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
   }
 
   .pinfocard {
-      position:relative;
-      z-index:1;
+    position: relative;
+    z-index: 1;
   }
 
   .pcardopp::after {
@@ -448,13 +450,12 @@ a {
     border-radius: 15px;
     height: 400px;
     background: black;
-    content:'';
-    position:absolute;
-    top:0;
-    left:0;
-    opacity:0.5;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
   }
-
 
   .projectsdisplay {
     margin-top: 50px;
@@ -507,7 +508,7 @@ a {
     padding-right: 10%;
   }
 
-  .preloader .preintro{
+  .preloader .preintro {
     margin-top: 200px;
   }
 }
