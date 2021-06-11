@@ -280,6 +280,7 @@ a {
   transition: top ease 0.5s;
   top: 0;
   margin-top: -50px;
+  margin-bottom: 20px;  
 }
 
 .pcardopp {
@@ -331,10 +332,6 @@ a {
   position: relative;
 }
 
-.pcard {
-  margin-bottom: 20px;
-}
-
 .project .pinfo {
   margin-top: 20px;
   position: absolute;
@@ -342,6 +339,8 @@ a {
   right: -200px;
   text-align: right;
   visibility: visible;
+  background-color: #141c24;
+  border-radius: 10px;
 }
 
 .pcard .pinfocard,
@@ -384,7 +383,7 @@ a {
 }
 
 @media (hover: hover) {
-  .card a:hover {
+  .card:hover {
     top: -10px;
   }
 
