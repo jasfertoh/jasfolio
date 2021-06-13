@@ -237,6 +237,10 @@ a {
   margin-top: 15px;
 }
 
+.card #php {
+  transform: scale(1.5);
+}
+
 .card a {
   text-decoration: none;
 }
@@ -274,29 +278,15 @@ a {
   width: 600px;
   height: 400px;
   position: relative;
-  left: -100px;
   background-color: grey;
   border-radius: 15px;
   transition: top ease 0.5s;
   top: 0;
-  margin-top: -50px;
-  margin-bottom: 20px;  
-}
-
-.pcardopp {
-  width: 600px;
-  height: 400px;
-  position: relative;
-  background-color: #379784;
-  background-image: url("../images/covidstats.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  right: -310px;
-  border-radius: 15px;
-  transition: top ease 0.5s;
-  top: 0;
-  margin-top: -50px;
+  left: 20%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pcard .github {
@@ -309,52 +299,60 @@ a {
   z-index: 999;
 }
 
-.pcardopp #github {
+.pcard .redirect {
   margin-right: 40px;
   margin-bottom: 40px;
   position: absolute;
-  bottom: 0;
-  right: 0;
-  font-size: 35px;
-}
-
-.pcardopp #redirect {
-  margin-right: 40px;
-  margin-bottom: 40px;
-  position: absolute;
-  bottom: 0;
-  right: 60px;
+  bottom: 2.5px;
+  left: 100px;
   font-size: 30px;
 }
 
-.project,
-.projectopp {
+.project {
+  width: 120%;
   position: relative;
+  left: -10%;
 }
 
-.project .pinfo {
-  margin-top: 20px;
+.skills h1, .achievements h1, .experience h1, .about h1, .testimonials h1, .projects h1 {
+  color: #FEFFCF;
+}
+
+.ptitle h1 {
+  color: #CAF0FF;
+}
+
+.project .ptitle {
   position: absolute;
-  top: 0;
-  right: -200px;
-  text-align: right;
+  top: -20px;
+  text-align: left;
   visibility: visible;
-  background-color: #141c24;
+  padding: 20px;
   border-radius: 10px;
 }
 
-.pcard .pinfocard,
-.pcardopp .pinfocard {
-  visibility: hidden;
+.project .ptitle h3 {
+  color: #d7d0d0; 
+  margin-top: -15px;
 }
 
-.projectopp .pinfo {
-  margin-top: 20px;
+.project .pinfo {
   position: absolute;
-  top: 0;
-  left: -150px;
+  top: 30%;
   text-align: left;
   visibility: visible;
+  background-color: #141c24;
+  padding: 20px;
+  border-radius: 10px;
+  border: 6px solid #1d2934;
+}
+
+.pinfo h1 {
+  font-size: 26px;
+}
+
+.pcard .pinfocard{
+  visibility: hidden;
 }
 
 .project .ashowcase span {
@@ -378,9 +376,19 @@ a {
   background-size: 40%;
 }
 
+#covidstats {
+  background-color: #379683;
+  background-image: url("../images/covidstats.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+
 .testimonials {
   margin-bottom: 50px;
 }
+
+/* Enable hover if browser / device supports it. */
 
 @media (hover: hover) {
   .card:hover {
@@ -396,6 +404,8 @@ a {
     top: -10px;
   }
 }
+
+/* Responsiveness */
 
 @media only screen and (max-width: 1200px) {
   body {
@@ -419,6 +429,13 @@ a {
     left: auto;
     width: 100%;
     margin-top: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .project, .projectopp{
+    width: 100%;
+    left: 0;
   }
 
   .pcardopp {
@@ -439,21 +456,13 @@ a {
     opacity: 0.5;
   }
 
+  #covidstats {
+    background-position-y: 45px;
+  }
+
   .pinfocard {
     position: relative;
     z-index: 1;
-  }
-
-  .pcardopp::after {
-    width: 100%;
-    border-radius: 15px;
-    height: 400px;
-    background: black;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0.5;
   }
 
   .projectsdisplay {
@@ -461,7 +470,7 @@ a {
   }
 
   .project .pinfo,
-  .projectopp .pinfo {
+  .project .ptitle {
     visibility: hidden;
   }
 
@@ -479,27 +488,6 @@ a {
   .pcard .pinfocard h1,
   .pcardopp .pinfocard h1 {
     padding-top: 40px;
-  }
-
-  .pcardopp #github {
-    position: absolute;
-    bottom: 0;
-    right: auto;
-    left: 0;
-    margin-right: 0px;
-    margin-left: 40px;
-    z-index: 999;
-  }
-
-  .pcardopp #redirect {
-    position: absolute;
-    bottom: 0;
-    right: auto;
-    left: 0;
-    margin-right: 0px;
-    margin-left: 100px;
-    margin-bottom: 42.5px;
-    z-index: 999;
   }
 
   .preloader {
