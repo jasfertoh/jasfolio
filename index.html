@@ -79,6 +79,9 @@
                         - Simple moderation commands (ban, kick, whois, ping) <br>
                         - Fun commands (meme, record)
                     </p>
+                    <p class="lang">
+                        <span class="langspace">JavaScript</span>
+                    </p>
                 </div>
             </div>
             <div class="project">
@@ -112,7 +115,13 @@
                         - Active cases<br>
                         and so on..
                     </p>
+                    <p class="lang">
+                        <span class="langspace">HTML</span>
+                        <span class="langspace">CSS</span>
+                        <span class="langspace">JavaScript</span>
+                    </p>
                 </div>
+                
             </div>
             <div class="project">
                 <div class="githubmax">
@@ -123,8 +132,6 @@
                         <h1>Telegram Bot</h1>
                         <p>Telegram bot coded in Python with functionalities like checking the weather, current cryptocurrency prices and so on.</p>
                     </div>
-                    
-                    
                 </div>
                 <div class="ptitle">
                     <h1>Finance System</h1>
@@ -132,6 +139,11 @@
                 </div>
                 <div class="pinfo">
                     <p>Telegram bot coded in Python with functionalities <br>like checking the weather, current cryptocurrency prices and so on.</p>
+                    <p class="lang">
+                        <span class="langspace">HTML</span>
+                        <span class="langspace">CSS</span>
+                        <span class="langspace">JavaScript</span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -251,45 +263,121 @@
         <div class="certificatedisplay">
             <div class="certcontainer">
                 <div class="certcard">
-                    <img src="certificates/NYP Cert.jpg">
-                    <p>Certificate</p>
+                    <img onclick="openModal();currentSlide(1)" src="certificates/Director's List.jpg">
+                    <p>Director's List Certificate</p>
                 </div>
                 <div class="certcard">
-                    <img src="certificates/cert1.jpg">
-                    <p>Certificate</p>
+                    <img onclick="openModal();currentSlide(2)" src="certificates/ICAS.jpg">
+                    <p>ICAS Certificate of Merit</p>
                 </div>
                 <div class="certcard">
-                    <img src="certificates/cert1.jpg">
-                    <p>Certificate</p>
+                    <img onclick="openModal();currentSlide(3)" src="certificates/School Grad.png">
+                    <p>Secondary School Graduation Certificate</p>
                 </div>
                 <div class="certcard">
-                    <img src="certificates/cert1.jpg">
-                    <p>Certificate</p>
+                    <img onclick="openModal();currentSlide(4)" src="certificates/NYP Cert.jpg">
+                    <p>NYP AEM Certificate of Completion</p>
                 </div>
                 <div class="certcard">
-                    <img src="certificates/cert1.jpg">
-                    <p>Certificate</p>
+                    <img onclick="openModal();currentSlide(5)" src="certificates/PTECH.jpg">
+                    <p>PTECH Participation Certificate</p>
                 </div>
                 <div class="certcard">
-                    <img src="certificates/cert1.jpg">
-                    <p>Certificate</p>
+                    <img onclick="openModal();currentSlide(6)" src="certificates/Good Progress Award.jpg">
+                    <p>Good Progress Award</p>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 8</div>
+            <img src="certificates/Director's List.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 8</div>
+            <img src="certificates/ICAS.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 8</div>
+            <img src="certificates/School Grad.png" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 8</div>
+            <img src="certificates/NYP Cert.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 8</div>
+            <img src="certificates/PTECH.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 8</div>
+            <img src="certificates/Good Progress Award.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
+            <img src="certificates/Testimonialpage1.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">8 / 8</div>
+            <img src="certificates/Testimonialpage2.png" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/Director's List.jpg" style="width:100%" onclick="currentSlide(1)" alt="Director's List Certificate">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/ICAS.jpg" style="width:100%" onclick="currentSlide(2)" alt="ICAS Certificate of Merit">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/School Grad.png" style="width:100%" onclick="currentSlide(3)" alt="Secondary School Graduation Certificate">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/NYP Cert.jpg" style="width:100%" onclick="currentSlide(4)" alt="NYP AEM Certificate of Completion">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/PTECH.jpg" style="width:100%" onclick="currentSlide(5)" alt="PTECH Participation Certificate">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/Good Progress Award.jpg" style="width:100%" onclick="currentSlide(6)" alt="Good Progress Award">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/Testimonialpage1.png" style="width:100%" onclick="currentSlide(7)" alt="Testimonial Page 1">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/Testimonialpage2.png" style="width:100%" onclick="currentSlide(8)" alt="Testimonial Page 2">
+          </div>
         </div>
     </div>
     <div class="testimonials" data-aos="fade-up"
     data-aos-easing="ease-in-sine">
         <h1>Testimonials</h1>
-        <p class="infotext">Here are what people say about me.</p>
+        <p class="infotext">here are some things people have said about me.</p>
         <div class="testimonialdisplay">
             <div class="tcontainer">
                 <div class="tcard">
-                    <img src="certificates/cert1.jpg">
-                    <p>Certificate</p>
+                    <img onclick="openModal();currentSlide(7)" src="certificates/Testimonialpage1.png">
+                    <p>Testimonial Page 1</p>
                 </div>
                 <div class="tcard">
-                    <img src="certificates/cert1.jpg">
-                    <p>Certificate</p>
+                    <img onclick="openModal();currentSlide(8)" src="certificates/Testimonialpage2.png">
+                    <p>Testimonial Page 2</p>
                 </div>
             </div>
             
@@ -306,7 +394,6 @@
     <script>
         AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/app.js"></script>
     <script src="https://kit.fontawesome.com/3644685e29.js" crossorigin="anonymous"></script>
