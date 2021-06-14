@@ -30,11 +30,11 @@ body {
   left: 0;
   top: 0;
 }
-
+/* 
 .loading {
   overflow: hidden;
   height: 100vh;
-}
+} */
 
 .text-color {
   color: #5a5a5a;
@@ -148,11 +148,6 @@ nav:after {
   display: none;
 }
 
-.select-items div:hover,
-.same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .options {
   text-decoration: none;
   color: #141c24;
@@ -172,6 +167,7 @@ nav:after {
 }
 
 #intro {
+  color: white;
   font-size: 50px;
 }
 
@@ -206,12 +202,13 @@ a {
 .projects h1,
 .skills h1,
 .experience h1,
-.contact h1 {
+.contact h1,
+.certificates h1 {
   margin-top: 25px;
 }
 
 .projectsdisplay {
-  margin-top: 100px;
+  margin-top: 50px;
   position: relative;
 }
 
@@ -258,12 +255,32 @@ a {
   margin-right: 20px;
 }
 
-.line {
+.circle {
   float: left;
-  height: 100%;
-  width: 5px;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
   background-color: #fff;
   margin-right: 10px;
+}
+
+.line {
+  height: 75%;
+  width: 3px;
+  background-color: #5a5a5a;
+  position: absolute;
+  top: 50%;
+  left: 2px;
+}
+
+#work, #others {
+  visibility: hidden;
+}
+
+.content {
+  margin-left: 20px;
 }
 
 .caption {
@@ -282,11 +299,12 @@ a {
   border-radius: 15px;
   transition: top ease 0.5s;
   top: 0;
-  left: 20%;
+  left: 25%;
   margin-top: 5px;
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+  border: 6px solid #1d2934;
 }
 
 .pcard .github {
@@ -297,6 +315,62 @@ a {
   left: 0;
   font-size: 35px;
   z-index: 999;
+  visibility: hidden;
+}
+
+.githubmax {
+  margin-left: 40px;
+  margin-bottom: 40px;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  font-size: 35px;
+  z-index: 999;
+}
+
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.tooltip:before,
+.tooltip:after {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.tooltip:after {
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid rgba(0,0,0,.75); 
+  border-left: 6px solid transparent;
+  content: '';
+  height: 0;
+  top: 40px;
+  left: 10px;
+  width: 0;
+}
+
+.tooltip:before {
+  background: rgba(0,0,0,.75);
+  border-radius: 2px;
+  color: #fff;
+  content: attr(data-title);
+  font-size: 14px;
+  padding: 6px 10px;
+  top: 45px;
+  white-space: nowrap;
+  border-radius: 5px;
+}
+
+.tooltip:after,
+.tooltip:before {
+  transform: translate3d(0,-10px,0);
+  transition: all .15s ease-in-out;
 }
 
 .pcard .redirect {
@@ -306,6 +380,18 @@ a {
   bottom: 2.5px;
   left: 100px;
   font-size: 30px;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.redirectmax {
+  margin-right: 40px;
+  margin-bottom: 40px;
+  position: absolute;
+  bottom: -18px;
+  left: 100px;
+  font-size: 30px;
+  z-index: 999;
 }
 
 .project {
@@ -314,7 +400,7 @@ a {
   left: -10%;
 }
 
-.skills h1, .achievements h1, .experience h1, .about h1, .testimonials h1, .projects h1 {
+.certificates h1, .skills h1, .achievements h1, .experience h1, .profile h1, .testimonials h1, .projects h1 {
   color: #FEFFCF;
 }
 
@@ -355,9 +441,70 @@ a {
   visibility: hidden;
 }
 
-.project .ashowcase span {
-  font-weight: 400;
-  text-decoration: underline;
+.ashowcase span {
+  font-weight: bold;
+  color: #FFEEEE;
+}
+
+.tcontainer {
+  width: 100%;
+  background-color: #363b49;
+  height: 500px;
+  border-radius: 15px;
+  display: flex;
+  padding: 40px 20px 20px 20px;
+  flex-wrap: wrap;
+}
+
+.tcard img {
+  width: 300px;
+  height: 400px;
+  padding: 0 10px;
+  border-bottom: 3px solid grey;
+}
+
+.tcard {
+  margin-top: 25px;
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.tcard p {
+  margin-top: 2.5px;
+  margin-bottom: 0px;
+}
+
+.certcard:nth-child(1) img {
+  width: 300px;
+}
+
+.certcontainer {
+  width: 100%;
+  background-color: #363b49;
+  height: 500px;
+  border-radius: 15px;
+  display: flex;
+  padding: 40px 20px 20px 20px;
+  flex-wrap: wrap;
+}
+
+.certcard img {
+  width: 150px;
+  height: 200px;
+  padding:0 10px;
+  border-bottom: 3px solid grey;
+}
+
+.certcard {
+  width: 33.3%;
+  height: 50%;
+  text-align: center;
+}
+
+.certcard p {
+  margin-top: 2.5px;
+  margin-bottom: 0px;
 }
 
 #discord {
@@ -384,8 +531,9 @@ a {
   background-size: 90%;
 }
 
-.testimonials {
-  margin-bottom: 50px;
+footer {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 /* Enable hover if browser / device supports it. */
@@ -393,6 +541,17 @@ a {
 @media (hover: hover) {
   .card:hover {
     top: -10px;
+  }
+
+  .tooltip:hover:after,
+  .tooltip:hover:before {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+
+  .select-items div:hover,
+  .same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
   }
 
   .socials i:hover {
@@ -431,17 +590,20 @@ a {
     margin-top: 20px;
     margin-left: 0;
     margin-right: 0;
+    border: none;
   }
 
-  .project, .projectopp{
+  .githubmax, .redirectmax {
+    visibility: hidden;
+  }
+
+  .project{
     width: 100%;
     left: 0;
   }
 
-  .pcardopp {
-    left: 0px;
-    width: 100%;
-    margin-top: 20px;
+  .pcard .github, .pcard .redirect {
+    visibility: visible;
   }
 
   .pcard::after {
@@ -460,13 +622,31 @@ a {
     background-position-y: 45px;
   }
 
+  #work {
+    visibility: visible;
+  }
+
+  #work {
+    top: 55%;
+  }
+
+  #comm {
+    top: 49%;
+    height: 72.5%;
+  }
+
+  #cca {
+    top: 53%;
+    height: 90%;
+  }
+
+  .tcontainer {
+    width: auto;
+  }
+
   .pinfocard {
     position: relative;
     z-index: 1;
-  }
-
-  .projectsdisplay {
-    margin-top: 50px;
   }
 
   .project .pinfo,
