@@ -15,6 +15,7 @@ var videoModalbtn = $(".previewmax");
 var videoModalbtn1 = $(".preview");
 var videoModal = $("#videoModal");
 
+
 function openVideo(num) {
   videoModal.css("display", "block");
   $(".videoModal-body " + num).css("display", "block");
@@ -24,6 +25,7 @@ function openVideo(num) {
 function closeVideo() {
   videoModal.css("display", "none");
   $('body').removeClass('loading');
+  $('.video').siblings("video").hide();
 }
 
 function outsideClick(e) {
