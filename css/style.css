@@ -530,7 +530,6 @@ a {
 
 .tcard {
   margin-top: 25px;
-  width: 50%;
   text-align: center;
 }
 
@@ -840,6 +839,14 @@ footer {
     margin-left: 5%;
   }
 
+  .pcard h1 {
+    font-size: 20px;
+  }
+
+  .pcard h3 {
+    font-size: 18px;
+  }
+
   .tcard {
     flex-basis: 55%;
     height: auto;
@@ -848,11 +855,6 @@ footer {
 
   .tcontainer {
     height: auto;
-  }
-
-  .tcard img {
-    width: 99%;
-    height: 400px;
   }
 
   .skillsdisplay {
@@ -916,6 +918,7 @@ footer {
     margin-left: 0;
     margin-right: 0;
     border: none;
+    height: 450px;
   }
 
   .githubmax, .redirectmax, .previewmax {
@@ -934,7 +937,7 @@ footer {
   .pcard::after {
     width: 100%;
     border-radius: 14px;
-    height: 400px;
+    height: 450px;
     background: black;
     content: "";
     position: absolute;
