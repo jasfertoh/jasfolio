@@ -9,7 +9,32 @@ $(window).on('load', function() {
         $('.preloader').fadeOut(500);
         $('.select-selected').css("visibility", "visible");
     });
+
+    $(".reload").fadeOut()
+
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 1080) {
+          $('.reload:hidden').stop(true, true).fadeIn();
+      } else if ($(this).scrollTop() == 1080) {
+          $('.reload').stop(true, true).fadeOut();
+      } else {
+        $('.reload').stop(true, true).fadeOut();
+      }
+    });
 });
+
+$(".more").hide()
+
+$("#viewmore").on('click', function() {
+  $(".more").fadeIn(2000);
+  $(this).fadeOut(100);
+})
+
+$(".reload").on('click', function() {
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $(".preloader").offset().top
+  }, 1500);
+})
 
 var videoModalbtn = $(".previewmax");
 var videoModalbtn1 = $(".preview");
