@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Jasfolio</title>
+    <title>首页 | Jasfolio</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
 </head>
 <body class="loading">
     <div class="preloader">
@@ -14,6 +18,9 @@
             <p class="welcome">欢迎来到我的作品集</p>
             <p class="logo">Jasfolio</p>
         </div>
+    </div>
+    <div class="reload">
+        <i class="fas fa-arrow-up"></i>
     </div>
     <div class="nav_container">
         <nav>
@@ -33,16 +40,20 @@
     </div>
     <div class="profile">
         <img id="pfp" src="images/selfie.jpg">
-        <h1 id="intro">嗨，我是 Jasfer! 👋</h1>
+        <h1 id="intro">卓家杰</h1>
         <h1 id="desc">渴望成为软件工程师的学生.</h1>
         <div class="socials">
             <a href="https://github.com/jasfertoh/" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://linkedin.com/in/jasfertoh/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:jasfer_toh_jia_jie@connect.ite.edu.sg"><i class="fas fa-envelope"></i></a>
         </div>
+        <h1>关于我</h1>   
         <div class="info">
-            <p class="infotext">我是个信息应用程序开发高级技工资格证书2年级生.</p>
-            <p class="infotext">我喜欢从零开始创造东西和寻找课业上遇到的难题的解决方法.</p>
-            <p class="infotext">我现在在闲暇时间自己学习React.</p>
+            <p class="infotext">你好，我是家杰, 我目前是个信息应用程序开发高级技工资格证书2年级生.</p>
+            <p class="infotext">在我成长过程时, 我对科技之类的事都很感兴趣.</p>
+            <p class="infotext">在我空闲的时候， 我喜欢从零开始创造东西和寻找课业上遇到的难题的解决方法.</p>
+            <p class="infotext">此外, 我现在在闲暇时间自己学习React.</p>
+            <p class="infotext">期待与您联络.</p>
         </div>
     </div>
     <div class="projects" data-aos="fade-up"
@@ -51,55 +62,389 @@
         <h1>作品</h1>
         <p class="infotext">这是我的一些作品.</p>
         <div class="projectsdisplay">
+            <h1 class="category" id="personal">个人</h1>
             <div class="project">
+                <div class="githubmax">
+                    <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/DiscordBot" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="previewmax" id="video1">
+                    <a class="tooltip" data-title="预览" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
+                </div>
                 <div class="pcard" id="discord">
                     <div class="pinfocard">
                         <h1>Discord 审计机器人</h1>
-                        <p>使用Discord.js编程能够将时间显示为其昵称并自动刷新的机器人.</p>
+                        <h3>审计变得容易.</h3>
+                        <p>
+                            有以下功能的机器人：<br>
+                            - 自动更新日期和时间作为其昵称<br>
+                            - 自动将会员数量更新为频道名称<br>
+                            - 简单审计的命令 (ban, kick, whois, ping) <br>
+                            - 乐趣的命令 (meme, record)
+                        </p>
+                        <p class="lang">
+                            <span class="langspace">Node.js</span>
+                        </p>
                     </div>
                     <div class="github">
-                        <a href="https://github.com/jasfertoh/DiscordBot" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/DiscordBot" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="preview" id="video1">
+                        <a class="tooltip" data-title="预览" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
                     </div>
                 </div>
-                <div class="pinfo">
+                <div class="ptitle">
                     <h1>Discord 审计机器人</h1>
-                    <p>使用Discord.js编程能够将时间显示为其昵称并自动刷新.</p>
-                </div>
-            </div>
-            <div class="projectopp">
-                <div class="pcardopp">
-                    <div class="pinfocard">
-                        <h1>Covid-19 数据追踪器</h1>
-                        <p>通过API得到的新加坡的Covid-19确诊人数，使用JavaScript编程的新冠状病毒的数据追踪器.</p>
-                    </div>
-                    <div id="github">
-                        <a href="https://github.com/jasfertoh/covidstatstracker" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div id="redirect">
-                        <a href="https://jasfertoh.com/covidstats/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
+                    <h3>审计变得容易.</h3>
                 </div>
                 <div class="pinfo">
-                    <h1>Covid-19 数据追踪器</h1>
-                    <p>通过API得到的新加坡的Covid-19确诊人数，<br>使用JavaScript编程的新冠状病毒的数据追踪器.</p>
+                    <p>
+                        有以下功能的机器人：<br>
+                        - 自动更新日期和时间作为其昵称<br>
+                        - 自动将会员数量更新为频道名称<br>
+                        - 简单审计的命令 (ban, kick, whois, ping) <br>
+                        - 乐趣的命令 (meme, record)
+                    </p>
+                    <p class="lang">
+                        <span class="langspace">Node.js</span>
+                    </p>
                 </div>
             </div>
             <div class="project">
-                <div class="pcard" id="tele">
+                <div class="githubmax">
+                    <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/covidstatstracker" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="redirectmax">
+                    <a class="tooltip" data-title="网站" href="https://jasfertoh.com/covidstats/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="pcard" id="covidstats">
                     <div class="pinfocard">
-                        <h1>Telegram 机器人</h1>
-                        <p>通过Python编程能够查天气，当前的加密货币价格，等等的机器人.</p>
+                        <h1>Covid-19 数据追踪器</h1>
+                        <h3>数据变得容易</h3>
+                        <p>
+                            通过API得到以下确诊人数的数据追踪器：<br>
+                            - 总数确诊人数<br>
+                            - 总数康复人数<br>
+                            - 现有病例<br>
+                            和更多。。
+                        </p>
+                        <p class="lang">
+                            <span class="langspace">HTML</span>
+                            <span class="langspace">CSS</span>
+                            <span class="langspace">JavaScript</span>
+                        </p>
                     </div>
                     <div class="github">
-                        <a href="https://github.com/jasfertoh/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/covidstatstracker" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
-                    
+                    <div class="redirect">
+                        <a class="tooltip" data-title="网站" href="https://jasfertoh.com/covidstats/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="ptitle">
+                    <h1>Covid-19 数据追踪器</h1>
+                    <h3>数据变得容易</h3>
                 </div>
                 <div class="pinfo">
-                    <h1>Telegram 机器人</h1>
-                    <p>通过Python编程能够查天气，当前的加密货币价格，等等的机器人.</p>
+                    <p>
+                        通过API得到以下确诊人数的数据追踪器：<br>
+                        - 总数确诊人数<br>
+                        - 总数康复人数<br>
+                        - 现有病例<br>
+                        和更多。。
+                    </p>
+                    <p class="lang">
+                        <span class="langspace">HTML</span>
+                        <span class="langspace">CSS</span>
+                        <span class="langspace">JavaScript</span>
+                    </p>
                 </div>
             </div>
+            <div class="project">
+                <div class="githubmax">
+                    <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/teleinfo/" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="previewmax" id="video9">
+                    <a class="tooltip" data-title="预览" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
+                </div>
+                <div class="pcard" id="tele">
+                    <div class="pinfocard">
+                        <h1>Teleinfo 机器人</h1>
+                        <h3>读取信息从未如此简单</h3>
+                        <p>有以下的功能的Telegram机器人，比如查看天气和目前的Bitcoin价钱.</p>
+                        <p class="lang">
+                            <span class="langspace">Python</span>
+                        </p>
+                    </div>
+                    <div class="github">
+                        <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/teleinfo/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="preview" id="video9">
+                        <a class="tooltip" data-title="预览" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
+                    </div>
+                </div>
+                <div class="ptitle">
+                    <h1>Teleinfo 机器人</h1>
+                    <h3>读取信息从未如此简单</h3>
+                </div>
+                <div class="pinfo">
+                    <p>有以下的功能的Telegram机器人<br>比如查看天气和目前的Bitcoin价钱.</p>
+                    <p class="lang">
+                        <span class="langspace">Python</span>
+                    </p>
+                </div>
+            </div>
+            <h1 class="category" id="school">学校</h1>
+            <div class="project">
+                <div class="githubmax">
+                    <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/hangman" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="previewmax" id="video2">
+                    <a class="tooltip" data-title="预览" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
+                </div>
+                <div class="redirectmax"  id="extra">
+                    <a class="tooltip" data-title="网站" href="https://jasfertoh.com/hangman/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="pcard" id="hangman">
+                    <div class="pinfocard">
+                        <h1 id="school">吊死鬼游戏</h1>
+                        <h3>好玩的游戏</h3>
+                        <p>包括以下内容的吊死鬼游戏：<br>
+                            - 最多允许6次失败<br>
+                            - 6次尝试失败后，从分数中扣除1分<br>
+                            - 每次尝试失败后，画布就会更新<br>
+                            - 猜过字母的按钮会自动被禁用
+                        </p>
+                        <p class="lang">
+                            <span class="langspace">HTML</span>
+                            <span class="langspace">CSS</span>
+                            <span class="langspace">JavaScript</span>
+                        </p>
+                    </div>
+                    <div class="github">
+                        <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/hangman" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="preview" id="video1">
+                        <a class="tooltip" data-title="预览" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
+                    </div>
+                    <div class="redirect" id="extra">
+                        <a class="tooltip" data-title="网站" href="https://jasfertoh.com/hangman/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="ptitle">
+                    <h1 id="school">吊死鬼游戏</h1>
+                    <h3>好玩的游戏</h3>
+                </div>
+                <div class="pinfo">
+                    <p>包括以下内容的吊死鬼游戏：<br>
+                        - 最多允许6次失败<br>
+                        - 6次尝试失败后，从分数中扣除1分<br>
+                        - 每次尝试失败后，画布就会更新<br>
+                        - 猜过字母的按钮会自动被禁用
+                    </p>
+                    <p class="lang">
+                        <span class="langspace">HTML</span>
+                        <span class="langspace">CSS</span>
+                        <span class="langspace">JavaScript</span>
+                    </p>
+                </div>
+            </div>
+            <div class="project">
+                <div class="githubmax">
+                    <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/bmicalculator" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="previewmax" id="video3">
+                    <a class="tooltip" data-title="预览" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
+                </div>
+                <div class="redirectmax" id="extra">
+                    <a class="tooltip" data-title="网站" href="https://jasfertoh.com/bmi/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="pcard" id="bmi">
+                    <div class="pinfocard">
+                        <h1 id="school">BMI计算器</h1>
+                        <h3>计算BMI的一个更好的替代品</h3>
+                        <p>包括以下功能的BMI计算机:
+                            - 接受两个输入 (体重, 高度)<br>
+                            - 根据输入计算BMI<br>
+                            - 在文本框中显示输出
+                        </p>
+                        <p class="lang">
+                            <span class="langspace">HTML</span>
+                            <span class="langspace">CSS</span>
+                            <span class="langspace">JavaScript</span>
+                        </p>
+                    </div>
+                    <div class="github">
+                        <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/bmicalculator" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="preview" id="video3">
+                        <a class="tooltip" data-title="预览" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
+                    </div>
+                    <div class="redirect" id="extra">
+                        <a class="tooltip" data-title="网站" href="https://jasfertoh.com/bmi/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="ptitle">
+                    <h1 id="school">BMI计算器</h1>
+                    <h3>计算BMI的一个更好的替代品</h3>
+                </div>
+                <div class="pinfo">
+                    <p>包括以下功能的BMI计算机:
+                        - 接受两个输入 (体重, 高度)<br>
+                        - 根据输入计算BMI<br>
+                        - 在文本框中显示输出
+                    </p>
+                    <p class="lang">
+                        <span class="langspace">HTML</span>
+                        <span class="langspace">CSS</span>
+                        <span class="langspace">JavaScript</span>
+                    </p>
+                </div>
+            </div>
+            <button id="viewmore">浏览更多</button>
+            <div class="project more">
+                <div class="githubmax">
+                    <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/itewebsite" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="previewmax" id="video5">
+                    <a class="tooltip" data-title="预览" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
+                </div>
+                <div class="redirectmax" id="extra">
+                    <a class="tooltip" data-title="网站" href="https://jasfertoh.com/ite/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="pcard" id="ite">
+                    <div class="pinfocard">
+                        <h1 id="school">ITE网站</h1>
+                        <h3>网站模拟图</h3>
+                        <p>为我的实践作业1制作了一个ITE网站的模拟图.</p>
+                        <p class="lang">
+                            <span class="langspace">HTML</span>
+                            <span class="langspace">CSS</span>
+                            <span class="langspace">JavaScript</span>
+                        </p>
+                    </div>
+                    <div class="github">
+                        <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/itewebsite" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="preview" id="video5">
+                        <a class="tooltip" data-title="预览" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
+                    </div>
+                    <div class="redirect" id="extra">
+                        <a class="tooltip" data-title="网站" href="https://jasfertoh.com/ite/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="ptitle">
+                    <h1 id="school">ITE网站</h1>
+                    <h3>网站模拟图</h3>
+                </div>
+                <div class="pinfo">
+                    <p>为我的实践作业1制作了一个ITE网站的模拟图.</p>
+                    <p class="lang">
+                        <span class="langspace">HTML</span>
+                        <span class="langspace">CSS</span>
+                        <span class="langspace">JavaScript</span>
+                        <span class="langspace">jQuery</span>
+                        
+                    </p>
+                </div>
+            </div>
+            <div class="project more">
+                <div class="githubmax">
+                    <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/studentsystem/" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="previewmax" id="video6">
+                    <a class="tooltip" data-title="预览" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
+                </div>
+                <div class="redirectmax" id="extra">
+                    <a class="tooltip" data-title="网站" href="https://jasfertoh.com/sms/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="pcard" id="sms">
+                    <div class="pinfocard">
+                        <h1 id="school">管理学生的系统</h1>
+                        <h3>管理学生便的容易.</h3>
+                        <p>管理学生的系统包括以下的功能:<br>
+                            - 允许管理员通过填写表格添加学生。<br>
+                            - 允许在同一页面上方便地进行编辑和删除记录。
+                        </p>
+                        <p class="lang">
+                            <span class="langspace">HTML</span>
+                            <span class="langspace">CSS</span>
+                            <span class="langspace">JavaScript</span>
+                            <span class="langspace">jQuery</span>
+                        </p>
+                        
+                    </div>
+                    <div class="github">
+                        <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/studentsystem/" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                    <div class="preview" id="video6">
+                        <a class="tooltip" data-title="预览" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
+                    </div>
+                    <div class="redirect" id="extra">
+                        <a class="tooltip" data-title="网站" href="https://jasfertoh.com/sms/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="ptitle">
+                    <h1 id="school">管理学生的系统</h1>
+                    <h3>管理学生便的容易.</h3>
+                </div>
+                <div class="pinfo">
+                    <p>管理学生的系统包括以下的功能:<br>
+                        - 允许管理员通过填写表格添加学生。<br>
+                        - 允许在同一页面上方便地进行编辑和删除记录。
+                    </p>
+                    <p class="lang">
+                        <span class="langspace">HTML</span>
+                        <span class="langspace">CSS</span>
+                        <span class="langspace">JavaScript</span>
+                        <span class="langspace">jQuery</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="videoModal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel">
+        <div class="videoModal-dialog" role="document">
+          <div class="videoModal-content">
+            <span class="closeVideo cursor" onclick="closeVideo()">&times;</span>
+            <div class="videoModal-body">
+              <video controls class="video" id="video1" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
+                <source src="./videos/Discord.mp4" type="video/mp4">
+                Your browser doesn't support HTML5 video tag.
+              </video>
+              <video controls class="video" id="video2" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
+                <source src="./videos/Hangman.mp4" type="video/mp4">
+                Your browser doesn't support HTML5 video tag.
+              </video>
+              <video controls class="video" id="video3" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
+                <source src="./videos/BMI Calculator.mp4" type="video/mp4">
+                Your browser doesn't support HTML5 video tag.
+              </video>
+              <video controls class="video" id="video4" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
+                <source src="./videos/Dental Website.mp4" type="video/mp4">
+                Your browser doesn't support HTML5 video tag.
+              </video>
+              <video controls class="video" id="video5" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
+                <source src="./videos/ITE Website.mp4" type="video/mp4">
+                Your browser doesn't support HTML5 video tag.
+              </video>
+              <video controls class="video" id="video6" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
+                <source src="./videos/Student Management System.mp4" type="video/mp4">
+                Your browser doesn't support HTML5 video tag.
+              </video>
+              <video controls class="video" id="video7" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
+                <source src="./videos/Movie App Prototype.mp4" type="video/mp4">
+                Your browser doesn't support HTML5 video tag.
+              </video>
+              <video controls class="video" id="video8" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
+                <source src="./videos/WCM Website.mp4" type="video/mp4">
+                Your browser doesn't support HTML5 video tag.
+              </video>
+              <video controls class="video" id="video9" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
+                <source src="./videos/Teleinfo.mp4" type="video/mp4">
+                Your browser doesn't support HTML5 video tag.
+              </video>
+            </div>
+          </div>
         </div>
     </div>
     <div class="skills" data-aos="fade-up"
@@ -107,9 +452,7 @@
     data-aos-easing="ease-in-sine">
         <h1>技能</h1>
         <p class="infotext">这是我目前拥有的技能.</p>
-        <div class="skillsdisplay" data-aos="fade-up"
-        data-aos-offset="100"
-        data-aos-easing="ease-in-sine">
+        <div class="skillsdisplay">
             <div class="card">
                 <a href="https://javascript.com" target="_blank">
                     <img src="images/javascript.png">
@@ -136,7 +479,7 @@
             </div>
             <div class="card">
                 <a href="https://php.net" target="_blank">
-                    <img src="images/php.png">
+                    <img src="images/php.png" id="php">
                     <h3 class="caption">PHP</h3>
                 </a>
             </div>
@@ -155,14 +498,15 @@
         <p class="infotext">这是我这几年得到的成就.</p>
         <div class="achievementsdisplay">
             <div class="ashowcase">
-                <h3><span>International Competitions and Assessments for Schools (数学) 优异奖</span> <a href="certificates/ICAS.pdf" target="_blank"><i class="fas fa-external-link-alt"></i></i></a></h3>
-                <p>在2017和2018年代表学校参加了International Competitions and
+                <h3><span>International Competitions and Assessments for Schools (Mathematics) Merit</span></h3>
+                <p>&#8226;&nbsp;在2017和2018年代表学校参加了International Competitions and
                     Assessments for Schools(数学)和在2017年里得到了优异奖</p>
-                <h3><span>Director's List Certificate</span> <a href="certificates/Director's List Certificate.pdf" target="_blank"><i class="fas fa-external-link-alt"></i></a></h3>
-                <p>在第一学年得到 4.0GPA 和 Director's List 证书.</p>
-                <h3><span>ACE 计划</span></h3>
-                <p>进入了ACE计划, 一个学生发展计划，将杰出的学生培养成全面的成就者.
-                </p>
+                <h3><span>Archery Competition (2019)</span></h3>
+                <p>&#8226;&nbsp;参加了2019年在大巴窑体育中心The Best Archers组织的射箭比赛。</p>
+                <h3><span>Director's List证书.</span></h3>
+                <p>&#8226;&nbsp;在第一学年得到 4.0GPA 和 Director's List 证书.</p>
+                <h3><span>ACE Programme</span></h3>
+                <p>&#8226;&nbsp;进入了ACE计划, 一个学生发展计划，将杰出的学生培养成全面的成就者.</p>
             </div>
         </div>
     </div>
@@ -173,45 +517,183 @@
         <p class="infotext">这些是我这些年累计的经验.</p>
         <div class="experiencedisplay">
             <div class="exp">
-                <div class="line"></div>
-                <h3>课外活动：</h3>
-                <p>射箭俱乐部高中课外活动执行委员会.</p>
-                <p>信息技术应用开发俱乐部的行政会议成员.</p>
+                <div class="circle"></div>
+                <div class="line" id="cca"></div>
+                <div class="content">
+                    <h3>课外活动：</h3>
+                    <p>&#8226;&nbsp;射箭俱乐部高中课外活动执行委员会.</p>
+                    <p>&#8226;&nbsp;信息技术应用开发俱乐部的行政会议成员.</p>
+                </div>
+                
             </div>
             <div class="exp">
-                <div class="line"></div>
-                <h3>社区服务：</h3>
-                <p>在2018年里协助了SunLove Home的长辈们.</p>
-                <p>在2019年里参加了一个目的是来协助All Saints Home的狂欢节.</p>
-                <p>积极地从2016到2019年参与促进环保的计划.</p>
+                <div class="circle"></div>
+                <div class="line" id="comm"></div>
+                <div class="content">
+                    <h3>社区服务:</h3>
+                    <p>&#8226;&nbsp;在2018年里协助了SunLove Home的长辈们.</p>
+                    <p>&#8226;&nbsp;在2019年里参加了一个目的是来协助All Saints Home的狂欢节.</p>
+                    <p>&#8226;&nbsp;积极地从2016到2019年参与促进环保的计划.</p>
+                </div>
+                
             </div>
             <div class="exp">
-                <div class="line"></div>
-                <h3>工作:</h3>
-                <p>从十一月2019年到2月2020年在Challenger当了零售助理， 学到了各个不同的技术产品知识，也学到了如何满足客户需求.</p>
+                <div class="circle"></div>
+                <div class="line" id="work"></div>
+                <div class="content">
+                    <h3>工作:</h3>
+                    <p>&#8226;&nbsp;从十一月2019年到2月2020年在Challenger当了零售助理， 学到了各个不同的技术产品知识，也学到了如何满足客户需求.</p>
+                </div>
+                
             </div>
             <div class="exp">
-                <div class="line"></div>
-                <h3>其他:</h3>
-                <p>在五月2020年被挑选代表学校参加十月开始的WorldSkills（应用程序开发）比赛.</p>
+                <div class="circle"></div>
+                <div class="line" id="others"></div>
+                <div class="content">
+                    <h3>其他：</h3>
+                    <p>&#8226;&nbsp;在五月2020年被挑选代表学校参加十月开始的WorldSkills（应用程序开发）比赛.</p>
+                </div>
             </div>
         </div>
     </div>
+    <div class="certificates" data-aos="fade-up"
+    data-aos-easing="ease-in-sine">
+        <h1>证书</h1>
+        <p class="infotext">以下是我多年来收集的证书。</p>
+        <div class="certificatedisplay">
+            <div class="certcontainer">
+                <div class="certcard">
+                    <img onclick="openModal();currentSlide(1)" src="certificates/Director's List.jpg">
+                    <p>Director's List证书.</p>
+                </div>
+                <div class="certcard">
+                    <img onclick="openModal();currentSlide(2)" src="certificates/ICAS.jpg">
+                    <p>ICAS Certificate of Merit</p>
+                </div>
+                <div class="certcard">
+                    <img onclick="openModal();currentSlide(3)" src="certificates/School Grad.png">
+                    <p>Secondary School Graduation Certificate</p>
+                </div>
+                <div class="certcard">
+                    <img onclick="openModal();currentSlide(4)" src="certificates/NYP Cert.jpg">
+                    <p>NYP AEM Certificate of Completion</p>
+                </div>
+                <div class="certcard">
+                    <img onclick="openModal();currentSlide(5)" src="certificates/PTECH.jpg">
+                    <p>PTECH Participation Certificate</p>
+                </div>
+                <div class="certcard">
+                    <img onclick="openModal();currentSlide(6)" src="certificates/Good Progress Award.jpg">
+                    <p>Good Progress Award</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 8</div>
+            <img src="certificates/Director's List.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 8</div>
+            <img src="certificates/ICAS.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 8</div>
+            <img src="certificates/School Grad.png" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 8</div>
+            <img src="certificates/NYP Cert.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 8</div>
+            <img src="certificates/PTECH.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 8</div>
+            <img src="certificates/Good Progress Award.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">7 / 8</div>
+            <img src="certificates/Testimonialpage1.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">8 / 8</div>
+            <img src="certificates/Testimonialpage2.png" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/Director's List.jpg" style="width:100%" onclick="currentSlide(1)" alt="Director's List Certificate">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/ICAS.jpg" style="width:100%" onclick="currentSlide(2)" alt="ICAS Certificate of Merit">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/School Grad.png" style="width:100%" onclick="currentSlide(3)" alt="Secondary School Graduation Certificate">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/NYP Cert.jpg" style="width:100%" onclick="currentSlide(4)" alt="NYP AEM Certificate of Completion">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/PTECH.jpg" style="width:100%" onclick="currentSlide(5)" alt="PTECH Participation Certificate">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/Good Progress Award.jpg" style="width:100%" onclick="currentSlide(6)" alt="Good Progress Award">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/Testimonialpage1.png" style="width:100%" onclick="currentSlide(7)" alt="Testimonial Page 1">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="certificates/Testimonialpage2.png" style="width:100%" onclick="currentSlide(8)" alt="Testimonial Page 2">
+          </div>
+        </div>
+    </div>
     <div class="testimonials" data-aos="fade-up"
-    data-aos-offset="100"
     data-aos-easing="ease-in-sine">
         <h1>感言</h1>
         <p class="infotext">这是别人对我的评价.</p>
         <div class="testimonialdisplay">
+            <div class="tcontainer">
+                <div class="tcard">
+                    <img onclick="openModal();currentSlide(7)" src="certificates/Testimonialpage1.png">
+                    <p>感言第一页</p>
+                </div>
+                <div class="tcard">
+                    <img onclick="openModal();currentSlide(8)" src="certificates/Testimonialpage2.png">
+                    <p>感言第二页</p>
+                </div>
+            </div>
+            
         </div>
     </div>
+    <footer data-aos="fade-up"
+    data-aos-offset="10"
+    data-aos-easing="ease-in-sine">
+        <p>Designed by Jasfer &copy; 2021</p>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/app.js"></script>
     <script src="https://kit.fontawesome.com/3644685e29.js" crossorigin="anonymous"></script>
