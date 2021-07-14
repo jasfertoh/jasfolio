@@ -1,702 +1,1150 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Jasfolio</title>
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-</head>
-<body class="loading">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+  </head>
+  <body class="loading">
     <div class="preloader">
-        <div class="preintro">
-            <p class="welcome">Welcome to my Portfolio</p>
-            <p class="logo">Jasfolio</p>
-        </div>
+      <div class="preintro">
+        <p class="welcome">Welcome to my Portfolio</p>
+        <p class="logo">Jasfolio</p>
+      </div>
     </div>
     <div class="reload">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </div>
     <div class="nav_container">
-        <nav>
-            <ul>
-                <li class="navlogo"><a href="https://jasfertoh.com">Jasfolio</a></li>
-                <li class="nav-items">
-                    <div class="custom-select" style="width: 75px;">
-                        <select id="lang">
-                            <option selected>EN</option>
-                            <option value="https://jasfertoh.com/">EN</option>
-                            <option value="https://jasfertoh.com/chi.html">CHI</option>
-                        </select>
-                    </div>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li class="navlogo"><a href="https://jasfertoh.com">Jasfolio</a></li>
+          <li class="nav-items">
+            <div class="custom-select" style="width: 75px">
+              <select id="lang">
+                <option selected>EN</option>
+                <option value="https://jasfertoh.com/">EN</option>
+                <option value="https://jasfertoh.com/chi.html">CHI</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </div>
     <div class="profile">
-        <img id="pfp" src="images/selfie.jpg">
-        <h1 id="intro">Jasfer Toh Jia Jie</h1>
-        <h1 id="desc">Aspiring software engineer and student.</h1>
-        <div class="socials">
-            <a href="https://github.com/jasfertoh/" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/jasfertoh/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:jasfer_toh_jia_jie@connect.ite.edu.sg"><i class="fas fa-envelope"></i></a>
-        </div>
-        <h1>About Me</h1>   
-        <div class="info">
-            <p class="infotext">Hi, I'm Jasfer, currently studying in Year 2 of Higher Nitec in IT Applications Development.</p>
-            <p class="infotext">Growing up, I have always shown a keen interest in the notion of technology.</p>
-            <p class="infotext">During my free time, I enjoy building things from scratch and coming up with solutions to the problems or bugs that I encounter in my work.</p>
-            <p class="infotext">In addition, I am also currently learning more about React on my own.</p>
-            <p class="infotext">Looking forward to connect with you!</p>
-        </div>
+      <img id="pfp" src="images/selfie.jpg" />
+      <h1 id="intro">Jasfer Toh Jia Jie</h1>
+      <h1 id="desc">Aspiring software engineer and student.</h1>
+      <div class="socials">
+        <a href="https://github.com/jasfertoh/" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="https://linkedin.com/in/jasfertoh/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="mailto:jasfer_toh_jia_jie@connect.ite.edu.sg"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+      <h1>About Me</h1>
+      <div class="info">
+        <p class="infotext">
+          Hi, I'm Jasfer, currently studying in Year 2 of Higher Nitec in IT
+          Applications Development.
+        </p>
+        <p class="infotext">
+          Growing up, I have always shown a keen interest in the notion of
+          technology.
+        </p>
+        <p class="infotext">
+          During my free time, I enjoy building things from scratch and coming
+          up with solutions to the problems or bugs that I encounter in my work.
+        </p>
+        <p class="infotext">
+          In addition, I am also currently learning more about React on my own.
+        </p>
+        <p class="infotext">Looking forward to connect with you!</p>
+      </div>
     </div>
-    <div class="projects" data-aos="fade-up"
-    data-aos-offset="100"
-    data-aos-easing="ease-in-sine">
-        <h1>Projects</h1>
-        <p class="infotext">Here are some of the projects I have worked on.</p>
-        <div class="projectsdisplay">
-            <h1 class="category" id="personal">Personal</h1>
-            <div class="project">
-                <div class="githubmax">
-                    <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/DiscordBot" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="previewmax" id="video1">
-                    <a class="tooltip" data-title="Preview" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
-                </div>
-                <div class="pcard" id="discord">
-                    <div class="pinfocard">
-                        <h1>Discord Moderation Bot</h1>
-                        <h3>Moderation made easy.</h3>
-                        <p>
-                            Bot with functionalities such as: <br>
-                            - Automatically update the day and time as it's nickname<br>
-                            - Updates the member count in the server as a channel name<br>
-                            - Simple moderation commands (ban, kick, whois, ping) <br>
-                            - Fun commands (meme, record)
-                        </p>
-                        <p class="lang">
-                            <span class="langspace">Node.js</span>
-                        </p>
-                    </div>
-                    <div class="github">
-                        <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/DiscordBot" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="preview" id="video1">
-                        <a class="tooltip" data-title="Preview" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
-                    </div>
-                </div>
-                <div class="ptitle">
-                    <h1>Discord Moderation Bot</h1>
-                    <h3>Moderation made easy.</h3>
-                </div>
-                <div class="pinfo">
-                    <p>
-                        Bot with functionalities such as: <br>
-                        - Automatically update the day and time as it's nickname<br>
-                        - Updates the member count in the server as a channel name<br>
-                        - Simple moderation commands (ban, kick, whois, ping) <br>
-                        - Fun commands (meme, record)
-                    </p>
-                    <p class="lang">
-                        <span class="langspace">Node.js</span>
-                    </p>
-                </div>
+    <div
+      class="projects"
+      data-aos="fade-up"
+      data-aos-offset="100"
+      data-aos-easing="ease-in-sine"
+    >
+      <h1>Projects</h1>
+      <p class="infotext">Here are some of the projects I have worked on.</p>
+      <div class="projectsdisplay">
+        <h1 class="category" id="personal">Personal</h1>
+        <div class="project">
+          <div class="githubmax">
+            <a
+              class="tooltip"
+              data-title="Github"
+              href="https://github.com/jasfertoh/DiscordBot"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="previewmax" id="video1">
+            <a
+              class="tooltip"
+              data-title="Preview"
+              data-toggle="videoModal"
+              data-target="#videoModal"
+              ><i class="far fa-eye"></i
+            ></a>
+          </div>
+          <div class="pcard" id="discord">
+            <div class="pinfocard">
+              <h1>Discord Moderation Bot</h1>
+              <h3>Moderation made easy.</h3>
+              <p>
+                Bot with functionalities such as: <br />
+                - Automatically update the day and time as it's nickname<br />
+                - Updates the member count in the server as a channel name<br />
+                - Simple moderation commands (ban, kick, whois, ping) <br />
+                - Fun commands (meme, record)
+              </p>
+              <p class="lang">
+                <span class="langspace">Node.js</span>
+              </p>
             </div>
-            <div class="project">
-                <div class="githubmax">
-                    <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/covidstatstracker" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="redirectmax">
-                    <a class="tooltip" data-title="Website" href="https://jasfertoh.com/covidstats/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-                <div class="pcard" id="covidstats">
-                    <div class="pinfocard">
-                        <h1>Covid-19 Statistics Tracker</h1>
-                        <h3>Statistics made easy.</h3>
-                        <p>
-                            Statistic tracker that provides the following data with the use of an API:<br>
-                            - Total number of cases<br>
-                            - Total recovered<br>
-                            - Active cases<br>
-                            and so on..
-                        </p>
-                        <p class="lang">
-                            <span class="langspace">HTML</span>
-                            <span class="langspace">CSS</span>
-                            <span class="langspace">JavaScript</span>
-                        </p>
-                    </div>
-                    <div class="github">
-                        <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/covidstatstracker" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="redirect">
-                        <a class="tooltip" data-title="Website" href="https://jasfertoh.com/covidstats/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="ptitle">
-                    <h1>Covid-19 Statistics Tracker</h1>
-                    <h3>Statistics made easy.</h3>
-                </div>
-                <div class="pinfo">
-                    <p>
-                        Statistic tracker that provides the following data with the use of an API:<br>
-                        - Total number of cases<br>
-                        - Total recovered<br>
-                        - Active cases<br>
-                        and so on..
-                    </p>
-                    <p class="lang">
-                        <span class="langspace">HTML</span>
-                        <span class="langspace">CSS</span>
-                        <span class="langspace">JavaScript</span>
-                    </p>
-                </div>
+            <div class="github">
+              <a
+                class="tooltip"
+                data-title="Github"
+                href="https://github.com/jasfertoh/DiscordBot"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
             </div>
-            <div class="project">
-                <div class="githubmax">
-                    <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/teleinfo/" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="previewmax" id="video9">
-                    <a class="tooltip" data-title="Preview" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
-                </div>
-                <div class="pcard" id="tele">
-                    <div class="pinfocard">
-                        <h1>Teleinfo Bot</h1>
-                        <h3>Retrieving information has never been easier.</h3>
-                        <p>Telegram bot with functionalities like checking the weather and the current bitcoin price.</p>
-                        <p class="lang">
-                            <span class="langspace">Python</span>
-                        </p>
-                    </div>
-                    <div class="github">
-                        <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/teleinfo/" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="preview" id="video9">
-                        <a class="tooltip" data-title="Preview" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
-                    </div>
-                </div>
-                <div class="ptitle">
-                    <h1>Teleinfo Bot</h1>
-                    <h3>Retrieving information has never been easier.</h3>
-                </div>
-                <div class="pinfo">
-                    <p>Telegram bot with functionalities <br>like checking the weather and the current bitcoin price.</p>
-                    <p class="lang">
-                        <span class="langspace">Python</span>
-                    </p>
-                </div>
-            </div>
-            <h1 class="category" id="school">School</h1>
-            <div class="project">
-                <div class="githubmax">
-                    <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/hangman" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="previewmax" id="video2">
-                    <a class="tooltip" data-title="Preview" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
-                </div>
-                <div class="redirectmax"  id="extra">
-                    <a class="tooltip" data-title="Website" href="https://jasfertoh.com/hangman/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-                <div class="pcard" id="hangman">
-                    <div class="pinfocard">
-                        <h1 id="school">Hangman Game</h1>
-                        <h3>Fun game to play.</h3>
-                        <p>Hangman game that consists of the following:<br>
-                            - Allows a maximum of 6 fails.<br>
-                            - Deducts 1 from score after 6 failed tries.<br>
-                            - Canvas updates after every failed try.<br>
-                            - Buttons belonging to letters that have been guessed are automatically disabled.
-                        </p>
-                        <p class="lang">
-                            <span class="langspace">HTML</span>
-                            <span class="langspace">CSS</span>
-                            <span class="langspace">JavaScript</span>
-                        </p>
-                    </div>
-                    <div class="github">
-                        <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/hangman" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="preview" id="video1">
-                        <a class="tooltip" data-title="Preview" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
-                    </div>
-                    <div class="redirect" id="extra">
-                        <a class="tooltip" data-title="Website" href="https://jasfertoh.com/hangman/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="ptitle">
-                    <h1 id="school">Hangman Game</h1>
-                    <h3>Fun game to play.</h3>
-                </div>
-                <div class="pinfo">
-                    <p>Hangman game that consists of the following:<br>
-                        - Allows a maximum of 6 fails.<br>
-                        - Deducts 1 from score after 6 failed tries.<br>
-                        - Canvas updates after every failed try.<br>
-                        - Buttons of letters that have been guessed are automatically disabled.
-                    </p>
-                    <p class="lang">
-                        <span class="langspace">HTML</span>
-                        <span class="langspace">CSS</span>
-                        <span class="langspace">JavaScript</span>
-                    </p>
-                </div>
-            </div>
-            <div class="project">
-                <div class="githubmax">
-                    <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/bmicalculator" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="previewmax" id="video3">
-                    <a class="tooltip" data-title="Preview" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
-                </div>
-                <div class="redirectmax" id="extra">
-                    <a class="tooltip" data-title="Website" href="https://jasfertoh.com/bmi/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-                <div class="pcard" id="bmi">
-                    <div class="pinfocard">
-                        <h1 id="school">BMI Calculator</h1>
-                        <h3>A nicer alternative to calculating BMI.</h3>
-                        <p>BMI Calculator with the following functionalities:
-                            - Accepts two inputs (weight, height)<br>
-                            - Calculates the BMI based on the inputs<br>
-                            - Displays the output in a textbox.
-                        </p>
-                        <p class="lang">
-                            <span class="langspace">HTML</span>
-                            <span class="langspace">CSS</span>
-                            <span class="langspace">JavaScript</span>
-                        </p>
-                    </div>
-                    <div class="github">
-                        <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/bmicalculator" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="preview" id="video3">
-                        <a class="tooltip" data-title="Preview" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
-                    </div>
-                    <div class="redirect" id="extra">
-                        <a class="tooltip" data-title="Website" href="https://jasfertoh.com/bmi/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="ptitle">
-                    <h1 id="school">BMI Calculator</h1>
-                    <h3>A nicer alternative to calculating BMI.</h3>
-                </div>
-                <div class="pinfo">
-                    <p>BMI Calculator with the following functionalities:
-                        - Accepts two inputs (weight, height)<br>
-                        - Calculates the BMI based on the inputs<br>
-                        - Displays the output in a textbox.
-                    </p>
-                    <p class="lang">
-                        <span class="langspace">HTML</span>
-                        <span class="langspace">CSS</span>
-                        <span class="langspace">JavaScript</span>
-                    </p>
-                </div>
-            </div>
-            <button id="viewmore">View More</button>
-            <div class="project more">
-                <div class="githubmax">
-                    <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/itewebsite" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="previewmax" id="video5">
-                    <a class="tooltip" data-title="Preview" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
-                </div>
-                <div class="redirectmax" id="extra">
-                    <a class="tooltip" data-title="Website" href="https://jasfertoh.com/ite/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-                <div class="pcard" id="ite">
-                    <div class="pinfocard">
-                        <h1 id="school">ITE Website</h1>
-                        <h3>Mockup of a website.</h3>
-                        <p>A mockup of the ITE website was created for my Practical Assignment 1.</p>
-                        <p class="lang">
-                            <span class="langspace">HTML</span>
-                            <span class="langspace">CSS</span>
-                            <span class="langspace">JavaScript</span>
-                        </p>
-                    </div>
-                    <div class="github">
-                        <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/itewebsite" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="preview" id="video5">
-                        <a class="tooltip" data-title="Preview" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
-                    </div>
-                    <div class="redirect" id="extra">
-                        <a class="tooltip" data-title="Website" href="https://jasfertoh.com/ite/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="ptitle">
-                    <h1 id="school">ITE Website</h1>
-                    <h3>Mockup of a website.</h3>
-                </div>
-                <div class="pinfo">
-                    <p>A mockup of the ITE website was created for my Practical Assignment 1.</p>
-                    <p class="lang">
-                        <span class="langspace">HTML</span>
-                        <span class="langspace">CSS</span>
-                        <span class="langspace">JavaScript</span>
-                        <span class="langspace">jQuery</span>
-                        
-                    </p>
-                </div>
-            </div>
-            <div class="project more">
-                <div class="githubmax">
-                    <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/studentsystem/" target="_blank"><i class="fab fa-github"></i></a>
-                </div>
-                <div class="previewmax" id="video6">
-                    <a class="tooltip" data-title="Preview" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
-                </div>
-                <div class="redirectmax" id="extra">
-                    <a class="tooltip" data-title="Website" href="https://jasfertoh.com/sms/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-                <div class="pcard" id="sms">
-                    <div class="pinfocard">
-                        <h1 id="school">Student Management System</h1>
-                        <h3>Managing students made easy.</h3>
-                        <p>Student Management System has the following functionalities:<br>
-                            - Allows administrator to add students by filling out the form.<br>
-                            - Allows easy access to editing and deletion of record on the same page.
-                        </p>
-                        <p class="lang">
-                            <span class="langspace">HTML</span>
-                            <span class="langspace">CSS</span>
-                            <span class="langspace">JavaScript</span>
-                            <span class="langspace">jQuery</span>
-                        </p>
-                        
-                    </div>
-                    <div class="github">
-                        <a class="tooltip" data-title="Github" href="https://github.com/jasfertoh/studentsystem/" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                    <div class="preview" id="video6">
-                        <a class="tooltip" data-title="Preview" data-toggle="videoModal" data-target="#videoModal"><i class="far fa-eye"></i></a>
-                    </div>
-                    <div class="redirect" id="extra">
-                        <a class="tooltip" data-title="Website" href="https://jasfertoh.com/sms/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <div class="ptitle">
-                    <h1 id="school">Student Management System</h1>
-                    <h3>Managing students made easy.</h3>
-                </div>
-                <div class="pinfo">
-                    <p>Student Management System has the following functionalities:<br>
-                        - Allows administrator to add students by filling out the form.<br>
-                        - Allows easy access to editing and deletion of record on the same page.
-                    </p>
-                    <p class="lang">
-                        <span class="langspace">HTML</span>
-                        <span class="langspace">CSS</span>
-                        <span class="langspace">JavaScript</span>
-                        <span class="langspace">jQuery</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="videoModal" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel">
-        <div class="videoModal-dialog" role="document">
-          <div class="videoModal-content">
-            <span class="closeVideo cursor" onclick="closeVideo()">&times;</span>
-            <div class="videoModal-body">
-              <video controls class="video" id="video1" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
-                <source src="./videos/Discord.mp4" type="video/mp4">
-                Your browser doesn't support HTML5 video tag.
-              </video>
-              <video controls class="video" id="video2" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
-                <source src="./videos/Hangman.mp4" type="video/mp4">
-                Your browser doesn't support HTML5 video tag.
-              </video>
-              <video controls class="video" id="video3" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
-                <source src="./videos/BMI Calculator.mp4" type="video/mp4">
-                Your browser doesn't support HTML5 video tag.
-              </video>
-              <video controls class="video" id="video4" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
-                <source src="./videos/Dental Website.mp4" type="video/mp4">
-                Your browser doesn't support HTML5 video tag.
-              </video>
-              <video controls class="video" id="video5" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
-                <source src="./videos/ITE Website.mp4" type="video/mp4">
-                Your browser doesn't support HTML5 video tag.
-              </video>
-              <video controls class="video" id="video6" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
-                <source src="./videos/Student Management System.mp4" type="video/mp4">
-                Your browser doesn't support HTML5 video tag.
-              </video>
-              <video controls class="video" id="video7" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
-                <source src="./videos/Movie App Prototype.mp4" type="video/mp4">
-                Your browser doesn't support HTML5 video tag.
-              </video>
-              <video controls class="video" id="video8" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
-                <source src="./videos/WCM Website.mp4" type="video/mp4">
-                Your browser doesn't support HTML5 video tag.
-              </video>
-              <video controls class="video" id="video9" style="width: 100%; height: auto; margin:0 auto; frameborder:0;">
-                <source src="./videos/Teleinfo.mp4" type="video/mp4">
-                Your browser doesn't support HTML5 video tag.
-              </video>
+            <div class="preview" id="video1">
+              <a
+                class="tooltip"
+                data-title="Preview"
+                data-toggle="videoModal"
+                data-target="#videoModal"
+                ><i class="far fa-eye"></i
+              ></a>
             </div>
           </div>
+          <div class="ptitle">
+            <h1>Discord Moderation Bot</h1>
+            <h3>Moderation made easy.</h3>
+          </div>
+          <div class="pinfo">
+            <p>
+              Bot with functionalities such as: <br />
+              - Automatically update the day and time as it's nickname<br />
+              - Updates the member count in the server as a channel name<br />
+              - Simple moderation commands (ban, kick, whois, ping) <br />
+              - Fun commands (meme, record)
+            </p>
+            <p class="lang">
+              <span class="langspace">Node.js</span>
+            </p>
+          </div>
         </div>
+        <div class="project">
+          <div class="githubmax">
+            <a
+              class="tooltip"
+              data-title="Github"
+              href="https://github.com/jasfertoh/covidstatstracker"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="redirectmax">
+            <a
+              class="tooltip"
+              data-title="Website"
+              href="https://jasfertoh.com/covidstats/"
+              target="_blank"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+          <div class="pcard" id="covidstats">
+            <div class="pinfocard">
+              <h1>Covid-19 Statistics Tracker</h1>
+              <h3>Statistics made easy.</h3>
+              <p>
+                Statistic tracker that provides the following data with the use
+                of an API:<br />
+                - Total number of cases<br />
+                - Total recovered<br />
+                - Active cases<br />
+                and so on..
+              </p>
+              <p class="lang">
+                <span class="langspace">HTML</span>
+                <span class="langspace">CSS</span>
+                <span class="langspace">JavaScript</span>
+              </p>
+            </div>
+            <div class="github">
+              <a
+                class="tooltip"
+                data-title="Github"
+                href="https://github.com/jasfertoh/covidstatstracker"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <div class="redirect">
+              <a
+                class="tooltip"
+                data-title="Website"
+                href="https://jasfertoh.com/covidstats/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="ptitle">
+            <h1>Covid-19 Statistics Tracker</h1>
+            <h3>Statistics made easy.</h3>
+          </div>
+          <div class="pinfo">
+            <p>
+              Statistic tracker that provides the following data with the use of
+              an API:<br />
+              - Total number of cases<br />
+              - Total recovered<br />
+              - Active cases<br />
+              and so on..
+            </p>
+            <p class="lang">
+              <span class="langspace">HTML</span>
+              <span class="langspace">CSS</span>
+              <span class="langspace">JavaScript</span>
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="githubmax">
+            <a
+              class="tooltip"
+              data-title="Github"
+              href="https://github.com/jasfertoh/teleinfo/"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="previewmax" id="video9">
+            <a
+              class="tooltip"
+              data-title="Preview"
+              data-toggle="videoModal"
+              data-target="#videoModal"
+              ><i class="far fa-eye"></i
+            ></a>
+          </div>
+          <div class="pcard" id="tele">
+            <div class="pinfocard">
+              <h1>Teleinfo Bot</h1>
+              <h3>Retrieving information has never been easier.</h3>
+              <p>
+                Telegram bot with functionalities like checking the weather and
+                the current bitcoin price.
+              </p>
+              <p class="lang">
+                <span class="langspace">Python</span>
+              </p>
+            </div>
+            <div class="github">
+              <a
+                class="tooltip"
+                data-title="Github"
+                href="https://github.com/jasfertoh/teleinfo/"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <div class="preview" id="video9">
+              <a
+                class="tooltip"
+                data-title="Preview"
+                data-toggle="videoModal"
+                data-target="#videoModal"
+                ><i class="far fa-eye"></i
+              ></a>
+            </div>
+          </div>
+          <div class="ptitle">
+            <h1>Teleinfo Bot</h1>
+            <h3>Retrieving information has never been easier.</h3>
+          </div>
+          <div class="pinfo">
+            <p>
+              Telegram bot with functionalities <br />like checking the weather
+              and the current bitcoin price.
+            </p>
+            <p class="lang">
+              <span class="langspace">Python</span>
+            </p>
+          </div>
+        </div>
+        <h1 class="category" id="school">School</h1>
+        <div class="project">
+          <div class="githubmax">
+            <a
+              class="tooltip"
+              data-title="Github"
+              href="https://github.com/jasfertoh/hangman"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="previewmax" id="video2">
+            <a
+              class="tooltip"
+              data-title="Preview"
+              data-toggle="videoModal"
+              data-target="#videoModal"
+              ><i class="far fa-eye"></i
+            ></a>
+          </div>
+          <div class="redirectmax" id="extra">
+            <a
+              class="tooltip"
+              data-title="Website"
+              href="https://jasfertoh.com/hangman/"
+              target="_blank"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+          <div class="pcard" id="hangman">
+            <div class="pinfocard">
+              <h1 id="school">Hangman Game</h1>
+              <h3>Fun game to play.</h3>
+              <p>
+                Hangman game that consists of the following:<br />
+                - Allows a maximum of 6 fails.<br />
+                - Deducts 1 from score after 6 failed tries.<br />
+                - Canvas updates after every failed try.<br />
+                - Buttons belonging to letters that have been guessed are
+                automatically disabled.
+              </p>
+              <p class="lang">
+                <span class="langspace">HTML</span>
+                <span class="langspace">CSS</span>
+                <span class="langspace">JavaScript</span>
+              </p>
+            </div>
+            <div class="github">
+              <a
+                class="tooltip"
+                data-title="Github"
+                href="https://github.com/jasfertoh/hangman"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <div class="preview" id="video1">
+              <a
+                class="tooltip"
+                data-title="Preview"
+                data-toggle="videoModal"
+                data-target="#videoModal"
+                ><i class="far fa-eye"></i
+              ></a>
+            </div>
+            <div class="redirect" id="extra">
+              <a
+                class="tooltip"
+                data-title="Website"
+                href="https://jasfertoh.com/hangman/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="ptitle">
+            <h1 id="school">Hangman Game</h1>
+            <h3>Fun game to play.</h3>
+          </div>
+          <div class="pinfo">
+            <p>
+              Hangman game that consists of the following:<br />
+              - Allows a maximum of 6 fails.<br />
+              - Deducts 1 from score after 6 failed tries.<br />
+              - Canvas updates after every failed try.<br />
+              - Buttons of letters that have been guessed are automatically
+              disabled.
+            </p>
+            <p class="lang">
+              <span class="langspace">HTML</span>
+              <span class="langspace">CSS</span>
+              <span class="langspace">JavaScript</span>
+            </p>
+          </div>
+        </div>
+        <div class="project">
+          <div class="githubmax">
+            <a
+              class="tooltip"
+              data-title="Github"
+              href="https://github.com/jasfertoh/bmicalculator"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="previewmax" id="video3">
+            <a
+              class="tooltip"
+              data-title="Preview"
+              data-toggle="videoModal"
+              data-target="#videoModal"
+              ><i class="far fa-eye"></i
+            ></a>
+          </div>
+          <div class="redirectmax" id="extra">
+            <a
+              class="tooltip"
+              data-title="Website"
+              href="https://jasfertoh.com/bmi/"
+              target="_blank"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+          <div class="pcard" id="bmi">
+            <div class="pinfocard">
+              <h1 id="school">BMI Calculator</h1>
+              <h3>A nicer alternative to calculating BMI.</h3>
+              <p>
+                BMI Calculator with the following functionalities: - Accepts two
+                inputs (weight, height)<br />
+                - Calculates the BMI based on the inputs<br />
+                - Displays the output in a textbox.
+              </p>
+              <p class="lang">
+                <span class="langspace">HTML</span>
+                <span class="langspace">CSS</span>
+                <span class="langspace">JavaScript</span>
+              </p>
+            </div>
+            <div class="github">
+              <a
+                class="tooltip"
+                data-title="Github"
+                href="https://github.com/jasfertoh/bmicalculator"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <div class="preview" id="video3">
+              <a
+                class="tooltip"
+                data-title="Preview"
+                data-toggle="videoModal"
+                data-target="#videoModal"
+                ><i class="far fa-eye"></i
+              ></a>
+            </div>
+            <div class="redirect" id="extra">
+              <a
+                class="tooltip"
+                data-title="Website"
+                href="https://jasfertoh.com/bmi/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="ptitle">
+            <h1 id="school">BMI Calculator</h1>
+            <h3>A nicer alternative to calculating BMI.</h3>
+          </div>
+          <div class="pinfo">
+            <p>
+              BMI Calculator with the following functionalities: - Accepts two
+              inputs (weight, height)<br />
+              - Calculates the BMI based on the inputs<br />
+              - Displays the output in a textbox.
+            </p>
+            <p class="lang">
+              <span class="langspace">HTML</span>
+              <span class="langspace">CSS</span>
+              <span class="langspace">JavaScript</span>
+            </p>
+          </div>
+        </div>
+        <button id="viewmore">View More</button>
+        <div class="project more">
+          <div class="githubmax">
+            <a
+              class="tooltip"
+              data-title="Github"
+              href="https://github.com/jasfertoh/itewebsite"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="previewmax" id="video5">
+            <a
+              class="tooltip"
+              data-title="Preview"
+              data-toggle="videoModal"
+              data-target="#videoModal"
+              ><i class="far fa-eye"></i
+            ></a>
+          </div>
+          <div class="redirectmax" id="extra">
+            <a
+              class="tooltip"
+              data-title="Website"
+              href="https://jasfertoh.com/ite/"
+              target="_blank"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+          <div class="pcard" id="ite">
+            <div class="pinfocard">
+              <h1 id="school">ITE Website</h1>
+              <h3>Mockup of a website.</h3>
+              <p>
+                A mockup of the ITE website was created for my Practical
+                Assignment 1.
+              </p>
+              <p class="lang">
+                <span class="langspace">HTML</span>
+                <span class="langspace">CSS</span>
+                <span class="langspace">JavaScript</span>
+              </p>
+            </div>
+            <div class="github">
+              <a
+                class="tooltip"
+                data-title="Github"
+                href="https://github.com/jasfertoh/itewebsite"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <div class="preview" id="video5">
+              <a
+                class="tooltip"
+                data-title="Preview"
+                data-toggle="videoModal"
+                data-target="#videoModal"
+                ><i class="far fa-eye"></i
+              ></a>
+            </div>
+            <div class="redirect" id="extra">
+              <a
+                class="tooltip"
+                data-title="Website"
+                href="https://jasfertoh.com/ite/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="ptitle">
+            <h1 id="school">ITE Website</h1>
+            <h3>Mockup of a website.</h3>
+          </div>
+          <div class="pinfo">
+            <p>
+              A mockup of the ITE website was created for my Practical
+              Assignment 1.
+            </p>
+            <p class="lang">
+              <span class="langspace">HTML</span>
+              <span class="langspace">CSS</span>
+              <span class="langspace">JavaScript</span>
+              <span class="langspace">jQuery</span>
+            </p>
+          </div>
+        </div>
+        <div class="project more">
+          <div class="githubmax">
+            <a
+              class="tooltip"
+              data-title="Github"
+              href="https://github.com/jasfertoh/studentsystem/"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="previewmax" id="video6">
+            <a
+              class="tooltip"
+              data-title="Preview"
+              data-toggle="videoModal"
+              data-target="#videoModal"
+              ><i class="far fa-eye"></i
+            ></a>
+          </div>
+          <div class="redirectmax" id="extra">
+            <a
+              class="tooltip"
+              data-title="Website"
+              href="https://jasfertoh.com/sms/"
+              target="_blank"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+          </div>
+          <div class="pcard" id="sms">
+            <div class="pinfocard">
+              <h1 id="school">Student Management System</h1>
+              <h3>Managing students made easy.</h3>
+              <p>
+                Student Management System has the following functionalities:<br />
+                - Allows administrator to add students by filling out the
+                form.<br />
+                - Allows easy access to editing and deletion of record on the
+                same page.
+              </p>
+              <p class="lang">
+                <span class="langspace">HTML</span>
+                <span class="langspace">CSS</span>
+                <span class="langspace">JavaScript</span>
+                <span class="langspace">jQuery</span>
+              </p>
+            </div>
+            <div class="github">
+              <a
+                class="tooltip"
+                data-title="Github"
+                href="https://github.com/jasfertoh/studentsystem/"
+                target="_blank"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <div class="preview" id="video6">
+              <a
+                class="tooltip"
+                data-title="Preview"
+                data-toggle="videoModal"
+                data-target="#videoModal"
+                ><i class="far fa-eye"></i
+              ></a>
+            </div>
+            <div class="redirect" id="extra">
+              <a
+                class="tooltip"
+                data-title="Website"
+                href="https://jasfertoh.com/sms/"
+                target="_blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="ptitle">
+            <h1 id="school">Student Management System</h1>
+            <h3>Managing students made easy.</h3>
+          </div>
+          <div class="pinfo">
+            <p>
+              Student Management System has the following functionalities:<br />
+              - Allows administrator to add students by filling out the form.<br />
+              - Allows easy access to editing and deletion of record on the same
+              page.
+            </p>
+            <p class="lang">
+              <span class="langspace">HTML</span>
+              <span class="langspace">CSS</span>
+              <span class="langspace">JavaScript</span>
+              <span class="langspace">jQuery</span>
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="skills" data-aos="fade-up"
-    data-aos-offset="100"
-    data-aos-easing="ease-in-sine">
-        <h1>Skills</h1>
-        <p class="infotext">Here are some skills that I currently have.</p>
-        <div class="skillsdisplay">
-            <div class="card">
-                <a href="https://javascript.com" target="_blank">
-                    <img src="images/javascript.png">
-                    <h3 class="caption">JavaScript</h3>
-                </a>
-            </div>
-            <div class="card">
-                <a href="https://html.com" target="_blank">
-                    <img src="images/html.png">
-                    <h3 class="caption">HTML</h3>
-                </a>
-            </div>
-            <div class="card">
-                <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank">
-                    <img src="images/css.png">
-                    <h3 class="caption">CSS</h3>
-                </a>
-            </div>
-            <div class="card">
-                <a href="https://python.org" target="_blank">
-                    <img src="images/python.png">
-                    <h3 class="caption">Python</h3>
-                </a>
-            </div>
-            <div class="card">
-                <a href="https://php.net" target="_blank">
-                    <img src="images/php.png" id="php">
-                    <h3 class="caption">PHP</h3>
-                </a>
-            </div>
-            <div class="card">
-                <a href="https://wordpress.org" target="_blank">
-                    <img src="images/wordpress.png">
-                    <h3 class="caption">WordPress</h3>
-                </a>
-            </div>
+    <div
+      class="videoModal"
+      id="videoModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="videoModalLabel"
+    >
+      <div class="videoModal-dialog" role="document">
+        <div class="videoModal-content">
+          <span class="closeVideo cursor" onclick="closeVideo()">&times;</span>
+          <div class="videoModal-body">
+            <video
+              controls
+              class="video"
+              id="video1"
+              style="width: 100%; height: auto; margin: 0 auto; frameborder: 0"
+            >
+              <source src="./videos/Discord.mp4" type="video/mp4" />
+              Your browser doesn't support HTML5 video tag.
+            </video>
+            <video
+              controls
+              class="video"
+              id="video2"
+              style="width: 100%; height: auto; margin: 0 auto; frameborder: 0"
+            >
+              <source src="./videos/Hangman.mp4" type="video/mp4" />
+              Your browser doesn't support HTML5 video tag.
+            </video>
+            <video
+              controls
+              class="video"
+              id="video3"
+              style="width: 100%; height: auto; margin: 0 auto; frameborder: 0"
+            >
+              <source src="./videos/BMI Calculator.mp4" type="video/mp4" />
+              Your browser doesn't support HTML5 video tag.
+            </video>
+            <video
+              controls
+              class="video"
+              id="video4"
+              style="width: 100%; height: auto; margin: 0 auto; frameborder: 0"
+            >
+              <source src="./videos/Dental Website.mp4" type="video/mp4" />
+              Your browser doesn't support HTML5 video tag.
+            </video>
+            <video
+              controls
+              class="video"
+              id="video5"
+              style="width: 100%; height: auto; margin: 0 auto; frameborder: 0"
+            >
+              <source src="./videos/ITE Website.mp4" type="video/mp4" />
+              Your browser doesn't support HTML5 video tag.
+            </video>
+            <video
+              controls
+              class="video"
+              id="video6"
+              style="width: 100%; height: auto; margin: 0 auto; frameborder: 0"
+            >
+              <source
+                src="./videos/Student Management System.mp4"
+                type="video/mp4"
+              />
+              Your browser doesn't support HTML5 video tag.
+            </video>
+            <video
+              controls
+              class="video"
+              id="video7"
+              style="width: 100%; height: auto; margin: 0 auto; frameborder: 0"
+            >
+              <source src="./videos/Movie App Prototype.mp4" type="video/mp4" />
+              Your browser doesn't support HTML5 video tag.
+            </video>
+            <video
+              controls
+              class="video"
+              id="video8"
+              style="width: 100%; height: auto; margin: 0 auto; frameborder: 0"
+            >
+              <source src="./videos/WCM Website.mp4" type="video/mp4" />
+              Your browser doesn't support HTML5 video tag.
+            </video>
+            <video
+              controls
+              class="video"
+              id="video9"
+              style="width: 100%; height: auto; margin: 0 auto; frameborder: 0"
+            >
+              <source src="./videos/Teleinfo.mp4" type="video/mp4" />
+              Your browser doesn't support HTML5 video tag.
+            </video>
+          </div>
         </div>
+      </div>
     </div>
-    <div class="achievements" data-aos="fade-up"
-    data-aos-offset="100"
-    data-aos-easing="ease-in-sine">
-        <h1>Achievements</h1>
-        <p class="infotext">Here are some of the achievements that I've obtained over the years.</p>
-        <div class="achievementsdisplay">
-            <div class="ashowcase">
-                <h3><span>International Competitions and Assessments for Schools (Mathematics) Merit</span></h3>
-                <p>&#8226;&nbsp;Represented the school at International Competitions and Assessments for Schools (Mathematics) in 2017 and 2018 and obtained the Merit Award in 2017.</p>
-                <h3><span>Archery Competition (2019)</span></h3>
-                <p>&#8226;&nbsp;Took part in the Archery Competition organised by the Best Archery at Toa Payoh sports centre in 2019.</p>
-                <h3><span>Director's List Certificate</span></h3>
-                <p>&#8226;&nbsp;Achieved a 4.0 GPA and obtained a Director's List Certificate in Year 1 of my course study.</p>
-                <h3><span>ACE Programme</span></h3>
-                <p>&#8226;&nbsp;Enrolled into the ACE Programme, a student development programme that grooms outstanding students into all rounded achievers.</p>
-            </div>
+    <div
+      class="skills"
+      data-aos="fade-up"
+      data-aos-offset="100"
+      data-aos-easing="ease-in-sine"
+    >
+      <h1>Skills</h1>
+      <p class="infotext">Here are some skills that I currently have.</p>
+      <div class="skillsdisplay">
+        <div class="card">
+          <a href="https://javascript.com" target="_blank">
+            <img src="images/javascript.png" />
+            <h3 class="caption">JavaScript</h3>
+          </a>
         </div>
+        <div class="card">
+          <a href="https://html.com" target="_blank">
+            <img src="images/html.png" />
+            <h3 class="caption">HTML</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a
+            href="https://www.w3.org/Style/CSS/Overview.en.html"
+            target="_blank"
+          >
+            <img src="images/css.png" />
+            <h3 class="caption">CSS</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://python.org" target="_blank">
+            <img src="images/python.png" />
+            <h3 class="caption">Python</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://php.net" target="_blank">
+            <img src="images/php.png" id="php" />
+            <h3 class="caption">PHP</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://wordpress.org" target="_blank">
+            <img src="images/wordpress.png" />
+            <h3 class="caption">WordPress</h3>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="experience" data-aos="fade-up"
-    data-aos-offset="100"
-    data-aos-easing="ease-in-sine">
-        <h1>Experience</h1>
-        <p class="infotext">Here are some of my experiences I have accumulated over the years.</p>
-        <div class="experiencedisplay">
-            <div class="exp">
-                <div class="circle"></div>
-                <div class="line" id="cca"></div>
-                <div class="content">
-                    <h3>CCA:</h3>
-                    <p>&#8226;&nbsp;Upper Sec CCA Executive Committee of the Archery Club</p>
-                    <p>&#8226;&nbsp;EXCO of the IAD Club</p>
-                </div>
-                
-            </div>
-            <div class="exp">
-                <div class="circle"></div>
-                <div class="line" id="comm"></div>
-                <div class="content">
-                    <h3>Community Service:</h3>
-                    <p>&#8226;&nbsp;Assisted the elderly in SunLove Home in 2018</p>
-                    <p>&#8226;&nbsp;Participated in a VIA Carnival aimed at helping the All Saints Home in 2019</p>
-                    <p>&#8226;&nbsp;Participated actively in the Green Outreach Programme from 2016 to 2019</p>
-                </div>
-                
-            </div>
-            <div class="exp">
-                <div class="circle"></div>
-                <div class="line" id="work"></div>
-                <div class="content">
-                    <h3>Work:</h3>
-                    <p>&#8226;&nbsp;Worked as a retail associate in Challenger from Nov 2019 to Feb 2020 where I gained the IT product knowledge and attended to the customers’ needs.</p>
-                </div>
-                
-            </div>
-            <div class="exp">
-                <div class="circle"></div>
-                <div class="line" id="others"></div>
-                <div class="content">
-                    <h3>Others:</h3>
-                    <p>&#8226;&nbsp;Selected to join the WorldSkills (Mobile Applications Development) competition in May which starts in Oct 2021.</p>
-                </div>
-            </div>
+    <div
+      class="achievements"
+      data-aos="fade-up"
+      data-aos-offset="100"
+      data-aos-easing="ease-in-sine"
+    >
+      <h1>Achievements</h1>
+      <p class="infotext">
+        Here are some of the achievements that I've obtained over the years.
+      </p>
+      <div class="achievementsdisplay">
+        <div class="ashowcase">
+          <h3>
+            <span
+              >International Competitions and Assessments for Schools
+              (Mathematics) Merit</span
+            >
+          </h3>
+          <p>
+            &#8226;&nbsp;Represented the school at International Competitions
+            and Assessments for Schools (Mathematics) in 2017 and 2018 and
+            obtained the Merit Award in 2017.
+          </p>
+          <h3><span>Archery Competition (2019)</span></h3>
+          <p>
+            &#8226;&nbsp;Took part in the Archery Competition organised by the
+            Best Archery at Toa Payoh sports centre in 2019.
+          </p>
+          <h3><span>Director's List Certificate</span></h3>
+          <p>
+            &#8226;&nbsp;Achieved a 4.0 GPA and obtained a Director's List
+            Certificate in Year 1 of my course study.
+          </p>
+          <h3><span>ACE Programme</span></h3>
+          <p>
+            &#8226;&nbsp;Enrolled into the ACE Programme, a student development
+            programme that grooms outstanding students into all rounded
+            achievers.
+          </p>
         </div>
+      </div>
     </div>
-    <div class="certificates" data-aos="fade-up"
-    data-aos-easing="ease-in-sine">
-        <h1>Certificates</h1>
-        <p class="infotext">Here are the certificates I've collected over the years.</p>
-        <div class="certificatedisplay">
-            <div class="certcontainer">
-                <div class="certcard">
-                    <img onclick="openModal();currentSlide(1)" src="certificates/Director's List.jpg">
-                    <p>Director's List Certificate</p>
-                </div>
-                <div class="certcard">
-                    <img onclick="openModal();currentSlide(2)" src="certificates/ICAS.jpg">
-                    <p>ICAS Certificate of Merit</p>
-                </div>
-                <div class="certcard">
-                    <img onclick="openModal();currentSlide(3)" src="certificates/School Grad.png">
-                    <p>Secondary School Graduation Certificate</p>
-                </div>
-                <div class="certcard">
-                    <img onclick="openModal();currentSlide(4)" src="certificates/NYP Cert.jpg">
-                    <p>NYP AEM Certificate of Completion</p>
-                </div>
-                <div class="certcard">
-                    <img onclick="openModal();currentSlide(5)" src="certificates/PTECH.jpg">
-                    <p>PTECH Participation Certificate</p>
-                </div>
-                <div class="certcard">
-                    <img onclick="openModal();currentSlide(6)" src="certificates/Good Progress Award.jpg">
-                    <p>Good Progress Award</p>
-                </div>
-            </div>
+    <div
+      class="experience"
+      data-aos="fade-up"
+      data-aos-offset="100"
+      data-aos-easing="ease-in-sine"
+    >
+      <h1>Experience</h1>
+      <p class="infotext">
+        Here are some of my experiences I have accumulated over the years.
+      </p>
+      <div class="experiencedisplay">
+        <div class="exp">
+          <div class="circle"></div>
+          <div class="line" id="cca"></div>
+          <div class="content">
+            <h3>CCA:</h3>
+            <p>
+              &#8226;&nbsp;Upper Sec CCA Executive Committee of the Archery Club
+            </p>
+            <p>&#8226;&nbsp;EXCO of the IAD Club</p>
+          </div>
         </div>
+        <div class="exp">
+          <div class="circle"></div>
+          <div class="line" id="comm"></div>
+          <div class="content">
+            <h3>Community Service:</h3>
+            <p>&#8226;&nbsp;Assisted the elderly in SunLove Home in 2018</p>
+            <p>
+              &#8226;&nbsp;Participated in a VIA Carnival aimed at helping the
+              All Saints Home in 2019
+            </p>
+            <p>
+              &#8226;&nbsp;Participated actively in the Green Outreach Programme
+              from 2016 to 2019
+            </p>
+          </div>
+        </div>
+        <div class="exp">
+          <div class="circle"></div>
+          <div class="line" id="work"></div>
+          <div class="content">
+            <h3>Work:</h3>
+            <p>
+              &#8226;&nbsp;Worked as a retail associate in Challenger from Nov
+              2019 to Feb 2020 where I gained the IT product knowledge and
+              attended to the customers’ needs.
+            </p>
+          </div>
+        </div>
+        <div class="exp">
+          <div class="circle"></div>
+          <div class="line" id="others"></div>
+          <div class="content">
+            <h3>Others:</h3>
+            <p>
+              &#8226;&nbsp;Selected to join the WorldSkills (Mobile Applications
+              Development) competition in May which starts in Oct 2021.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="certificates" data-aos="fade-up" data-aos-easing="ease-in-sine">
+      <h1>Certificates</h1>
+      <p class="infotext">
+        Here are the certificates I've collected over the years.
+      </p>
+      <div class="certificatedisplay">
+        <div class="certcontainer">
+          <div class="certcard">
+            <img
+              onclick="openModal();currentSlide(1)"
+              src="certificates/Director's List.jpg"
+            />
+            <p>Director's List Certificate</p>
+          </div>
+          <div class="certcard">
+            <img
+              onclick="openModal();currentSlide(2)"
+              src="certificates/ICAS.jpg"
+            />
+            <p>ICAS Certificate of Merit</p>
+          </div>
+          <div class="certcard">
+            <img
+              onclick="openModal();currentSlide(3)"
+              src="certificates/School Grad.jpg"
+            />
+            <p>Secondary School Graduation Certificate</p>
+          </div>
+          <div class="certcard">
+            <img
+              onclick="openModal();currentSlide(4)"
+              src="certificates/NYP Cert.jpg"
+            />
+            <p>NYP AEM Certificate of Completion</p>
+          </div>
+          <div class="certcard">
+            <img
+              onclick="openModal();currentSlide(5)"
+              src="certificates/PTECH.jpg"
+            />
+            <p>PTECH Participation Certificate</p>
+          </div>
+          <div class="certcard">
+            <img
+              onclick="openModal();currentSlide(6)"
+              src="certificates/Good Progress Award.jpg"
+            />
+            <p>Good Progress Award</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-      
-          <div class="mySlides">
-            <div class="numbertext">1 / 8</div>
-            <img src="certificates/Director's List.jpg" style="width:100%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">2 / 8</div>
-            <img src="certificates/ICAS.jpg" style="width:100%">
-          </div>
-      
-          <div class="mySlides">
-            <div class="numbertext">3 / 8</div>
-            <img src="certificates/School Grad.png" style="width:100%">
-          </div>
-          
-          <div class="mySlides">
-            <div class="numbertext">4 / 8</div>
-            <img src="certificates/NYP Cert.jpg" style="width:100%">
-          </div>
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides">
+          <div class="numbertext">1 / 8</div>
+          <img src="certificates/Director's List.jpg" style="width: 100%" />
+        </div>
 
-          <div class="mySlides">
-            <div class="numbertext">5 / 8</div>
-            <img src="certificates/PTECH.jpg" style="width:100%">
-          </div>
+        <div class="mySlides">
+          <div class="numbertext">2 / 8</div>
+          <img src="certificates/ICAS.jpg" style="width: 100%" />
+        </div>
 
-          <div class="mySlides">
-            <div class="numbertext">6 / 8</div>
-            <img src="certificates/Good Progress Award.jpg" style="width:100%">
-          </div>
+        <div class="mySlides">
+          <div class="numbertext">3 / 8</div>
+          <img src="certificates/School Grad.png" style="width: 100%" />
+        </div>
 
-          <div class="mySlides">
-            <div class="numbertext">7 / 8</div>
-            <img src="certificates/Testimonialpage1.png" style="width:100%">
-          </div>
+        <div class="mySlides">
+          <div class="numbertext">4 / 8</div>
+          <img src="certificates/NYP Cert.jpg" style="width: 100%" />
+        </div>
 
-          <div class="mySlides">
-            <div class="numbertext">8 / 8</div>
-            <img src="certificates/Testimonialpage2.png" style="width:100%">
+        <div class="mySlides">
+          <div class="numbertext">5 / 8</div>
+          <img src="certificates/PTECH.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 8</div>
+          <img src="certificates/Good Progress Award.jpg" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 8</div>
+          <img src="certificates/Testimonialpage1.png" style="width: 100%" />
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 8</div>
+          <img src="certificates/Testimonialpage2.png" style="width: 100%" />
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="certificates/Director's List.jpg"
+            style="width: 100%"
+            onclick="currentSlide(1)"
+            alt="Director's List Certificate"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="certificates/ICAS.jpg"
+            style="width: 100%"
+            onclick="currentSlide(2)"
+            alt="ICAS Certificate of Merit"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="certificates/School Grad.png"
+            style="width: 100%"
+            onclick="currentSlide(3)"
+            alt="Secondary School Graduation Certificate"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="certificates/NYP Cert.jpg"
+            style="width: 100%"
+            onclick="currentSlide(4)"
+            alt="NYP AEM Certificate of Completion"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="certificates/PTECH.jpg"
+            style="width: 100%"
+            onclick="currentSlide(5)"
+            alt="PTECH Participation Certificate"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="certificates/Good Progress Award.jpg"
+            style="width: 100%"
+            onclick="currentSlide(6)"
+            alt="Good Progress Award"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="certificates/Testimonialpage1.png"
+            style="width: 100%"
+            onclick="currentSlide(7)"
+            alt="Testimonial Page 1"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="certificates/Testimonialpage2.png"
+            style="width: 100%"
+            onclick="currentSlide(8)"
+            alt="Testimonial Page 2"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="testimonials" data-aos="fade-up" data-aos-easing="ease-in-sine">
+      <h1>Testimonials</h1>
+      <p class="infotext">Here are some things people have said about me.</p>
+      <div class="testimonialdisplay">
+        <div class="tcontainer">
+          <div class="tcard">
+            <img
+              onclick="openModal();currentSlide(7)"
+              src="certificates/Testimonialpage1.png"
+            />
+            <p>Testimonial Page 1</p>
           </div>
-          
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-      
-          <div class="caption-container">
-            <p id="caption"></p>
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="certificates/Director's List.jpg" style="width:100%" onclick="currentSlide(1)" alt="Director's List Certificate">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="certificates/ICAS.jpg" style="width:100%" onclick="currentSlide(2)" alt="ICAS Certificate of Merit">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="certificates/School Grad.png" style="width:100%" onclick="currentSlide(3)" alt="Secondary School Graduation Certificate">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="certificates/NYP Cert.jpg" style="width:100%" onclick="currentSlide(4)" alt="NYP AEM Certificate of Completion">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="certificates/PTECH.jpg" style="width:100%" onclick="currentSlide(5)" alt="PTECH Participation Certificate">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="certificates/Good Progress Award.jpg" style="width:100%" onclick="currentSlide(6)" alt="Good Progress Award">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="certificates/Testimonialpage1.png" style="width:100%" onclick="currentSlide(7)" alt="Testimonial Page 1">
-          </div>
-          <div class="column">
-            <img class="demo cursor" src="certificates/Testimonialpage2.png" style="width:100%" onclick="currentSlide(8)" alt="Testimonial Page 2">
+          <div class="tcard">
+            <img
+              onclick="openModal();currentSlide(8)"
+              src="certificates/Testimonialpage2.png"
+            />
+            <p>Testimonial Page 2</p>
           </div>
         </div>
+      </div>
     </div>
-    <div class="testimonials" data-aos="fade-up"
-    data-aos-easing="ease-in-sine">
-        <h1>Testimonials</h1>
-        <p class="infotext">Here are some things people have said about me.</p>
-        <div class="testimonialdisplay">
-            <div class="tcontainer">
-                <div class="tcard">
-                    <img onclick="openModal();currentSlide(7)" src="certificates/Testimonialpage1.png">
-                    <p>Testimonial Page 1</p>
-                </div>
-                <div class="tcard">
-                    <img onclick="openModal();currentSlide(8)" src="certificates/Testimonialpage2.png">
-                    <p>Testimonial Page 2</p>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    <footer data-aos="fade-up"
-    data-aos-offset="10"
-    data-aos-easing="ease-in-sine">
-        <p>Designed by Jasfer &copy; 2021</p>
+    <footer
+      data-aos="fade-up"
+      data-aos-offset="10"
+      data-aos-easing="ease-in-sine"
+    >
+      <p>Designed by Jasfer &copy; 2021</p>
     </footer>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/app.js"></script>
-    <script src="https://kit.fontawesome.com/3644685e29.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/3644685e29.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/script.js"></script>
-    <script src="js/wow.js"></script>
-</body>
+  </body>
 </html>
