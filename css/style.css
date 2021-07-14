@@ -422,7 +422,6 @@ a {
 
 .tooltip:before {
   background: rgba(0,0,0,.75);
-  border-radius: 2px;
   color: #fff;
   content: attr(data-title);
   font-size: 14px;
@@ -581,6 +580,7 @@ a {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  background-color: white;
 }
 
 .certcontainer {
@@ -634,7 +634,6 @@ a {
 .videoModal {
   display: none;
   position: fixed;
-  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
@@ -660,7 +659,6 @@ a {
 }
 
 .closeVideo {
-  color: #ccc;
   float: right;
   font-size: 30px;
   color: #fff;
@@ -676,7 +674,6 @@ a {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
   padding-top: 75px;
   left: 0;
   top: 0;
@@ -691,7 +688,6 @@ a {
 .modal-content {
   position: relative;
   margin: auto;
-  padding: 0;
   width: 70%;
   max-width: 500px;
   z-index: 999999;
